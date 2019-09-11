@@ -25,7 +25,7 @@ Syntax highlighted code block
 
 [My Post](Blog_post1.pdf) and ![Image](src)
 ```
-
+[My Post](Blog_post1.pdf)
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
