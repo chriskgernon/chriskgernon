@@ -1,38 +1,7 @@
-## Welcome to GitHub Pages
+Blog Post 1
 
-You can use the [editor on GitHub](https://github.com/chriskgernon/chriskgernon/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+The new age of big data has created a lot possibilities for analysis of humans and the choices they make. This article follows that trend. It uses Twitter and mobile positioning data to analyze patterns, trends and associations of human behaviour and interactions. The authors use Friuu-Venezia Giulia, a region in northeastern Italy, as a case study. Their results show the percentage difference of Italians and percentage difference of foreigners; density of tweets; and origin destination flows for Italians and origin destination flows for foreigners for specific days– days with events and “normal” days without events– in 2016. Their findings show that there is a greater concentration of foreigners and tweets in areas that have events on those days, and there is a much higher flux of people on the event day of people moving from regions surrounding the event to the event region. Also, their findings show there is a higher presence of people on sunny days than rainy days, and more foreigners are found in regions with more tourist attractions like historic centers and ornate architecture. However, I find a lot of their results hard to understand. For example, the authors use color to show two variables: tweet density and tweet relevance. However, it is hard to analyze two variables when color is the only factor used to visualize the variables. Regardless, the results of the case study are intuitive: there are more people in areas with nice weather and there are people moving from non-event areas to areas with events. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The fact that QGIS is a free, open-source technology had a big impact on the study. The authors used QGIS to analyze their data as well as visualize their results. If QGIS was not open source, the authors would be forced to either pay a company a large sum of money for a GIS license or drastically lower the scale of their analysis. Instead of focusing on a whole region in Italy, they may have only been able to analyze a small city or part of a city. Additionally, if the authors were unable to afford the cost of a GIS license, they would be hard pressed to show decent visualizations of their findings. 
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[My Post](Blog_post1.pdf) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-[My Post](Blog_post1.pdf)
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chriskgernon/chriskgernon/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Article Link](https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-4-W8/199/2018/isprs-archives-XLII-4-W8-199-2018.pdf) 
