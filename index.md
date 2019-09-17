@@ -5,3 +5,6 @@ The new age of big data has created a lot possibilities for analysis of humans a
 The fact that QGIS is a free, open-source technology had a big impact on the study. The authors used QGIS to analyze their data as well as visualize their results. If QGIS was not open source, the authors would be forced to either pay a company a large sum of money for a GIS license or drastically lower the scale of their analysis. Instead of focusing on a whole region in Italy, they may have only been able to analyze a small city or part of a city. Additionally, if the authors were unable to afford the cost of a GIS license, they would be hard pressed to show decent visualizations of their findings. 
 
 [Article Link](https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-4-W8/199/2018/isprs-archives-XLII-4-W8-199-2018.pdf) 
+
+
+[My First QGIS Model](qgisModel.md)
