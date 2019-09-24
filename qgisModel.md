@@ -1,6 +1,12 @@
 ## My First QGIS Model
 In the first lab, we created a model to calculate direction and distrance from a point.
 
+Here are two graphs I made using the entire state of Kansas. I used an arbitrary point in the Northeast corner of the state as the City Center and all the census tracts as the Input Features. 
+
+This [graph](dir_plot.html) shows how the direction impacts the median rent based on Census Tracts in Kansas.
+
+This [graph](dist_plot.html) shows how the distance from the point impacts the median rent based on Census Tracts in Kansas. 
+
 [Model](Distance_from_point.model3)
 
 [back to Main Page](index.md)
