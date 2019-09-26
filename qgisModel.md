@@ -14,6 +14,8 @@ There are many way in which GIS can be used inappropriatley. Thus, none of my wo
 
 In the first lab, we created a model to calculate direction and distrance from a point.
 
+![Model](Model.PNG)
+
 Here are two maps that show the results of my running my model:
 
 ![Cardinal Direction](Cardinal_direction_map.png)
