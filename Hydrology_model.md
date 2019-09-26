@@ -1,10 +1,12 @@
 In this lab, we created a Hydrological Flow Model for the area around Mount Kilimanjaro. The following is a workflow of the process:
 
-1. Gather and collect digital elevation model data at https://search.earthdata.nasa.gov/
+1. Gather and collect digital elevation model data at this [link]( https://search.earthdata.nasa.gov/)
 
 2. Mosaic the grids together
 
 3. Project the grid to the correct UTM zone
+After steps two and three, your DEM should look like this:
+![DEM](DEM.PNG)
 
 4. Create a hillshade to get a visual understanding of the topography you are looking at
 
