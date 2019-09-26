@@ -11,10 +11,18 @@ After steps two and three, your DEM should look like this:
 
 4. Create a hillshade to get a visual understanding of the topography you are looking at
 
+![Hillshade](Analytical_hillshading2.PNG)
+
 5. Use the Sink Drainage Route Detection tool to detect sinks and determine flow through the sinks. This step is necessary so that the hydrological analysis does not get stuck in either real holes or holes created by data errors.
+
+![Sink Drainage](Sink_Drainage_route.PNG)
 
 6. Use the Sink Removal tool to remove sinks from the DEM by filling them.
 
 7. Use the Flow Accumulation (Top-Down) tool to calculate where the flow will accumulate.
 
+![Flow Accumulation](Flow_Accumulation.PNG)
+
 8. Use the Channel Network tool to show where the streams are.
+
+![Channel_Network](Channel_network.PNG)
