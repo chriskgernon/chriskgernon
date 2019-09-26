@@ -5,6 +5,7 @@ In this lab, we created a Hydrological Flow Model for the area around Mount Kili
 2. Mosaic the grids together
 
 3. Project the grid to the correct UTM zone
+
 After steps two and three, your DEM should look like this:
 ![DEM](DEM.PNG)
 
