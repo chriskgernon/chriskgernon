@@ -20,7 +20,7 @@ Here are two maps that show the results of my model using the test data below.
 
 ![Cardinal Direction](Cardinal_direction_map.png)
 
-![Distance Map](Distance_map.PNG)
+![Distance Map](Distance_map.png)
 
 Here are two graphs I made using the entire state of Kansas. I used an arbitrary point in the Northeast corner of the state as the City Center and all the census tracts as the Input Features. 
 
