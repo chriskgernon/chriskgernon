@@ -14,6 +14,10 @@ There are many way in which GIS can be used inappropriatley. Thus, none of my wo
 
 In the first lab, we created a model to calculate direction and distrance from a point.
 
+Here are two maps that show the results of my running my model:
+
+![Cardinal Direction](Cardinal_direction_map.png)
+
 Here are two graphs I made using the entire state of Kansas. I used an arbitrary point in the Northeast corner of the state as the City Center and all the census tracts as the Input Features. 
 
 This [graph](dir_plot.html) shows how the direction impacts the median rent based on Census Tracts in Kansas.
