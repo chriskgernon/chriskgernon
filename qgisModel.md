@@ -3,10 +3,15 @@
 I am Chris Gernon, a junior at Middlebury College. I am taking a class that focuses on the open source element of GIS and other open source programs. 
 
 
-The discourse sourrounding GIS is one of great concern for me. Many view GIS and the work done using GIS as objective and factual. In reality, work done with GIS is incredibly subjective and bias. Many educators, hiring committees, or learning material frame GIS as a solution to many of the worlds problems. However, not all problems that can Classrooms, hiring committees, and textbooks a one-dimensional understanding of GIS that creates a dichotomy between those with  the discourse around GIS Skepticism and doubt is vital when considering GIS technology and work done using a GIS. It's important to ask questions such as: where is the data coming from? Why was the data collected? Who collected the data? 
+The discourse sourrounding GIS is one of great concern for me. GIS is a contradictory technology that simultaneously marginalizes and empowers people and community members. Many view GIS and the work done using GIS as objective and factual. In reality, work done with GIS is incredibly subjective and bias. Because you download shapefiles and other data types from the internet that include neat rows and columns of data, it is easy to forget that a human was the one that collected and made the data. Thus, no data collection process is value free. 
+
+Many educators, hiring committees, or learning material frame GIS as a solution to many of the worlds problems. However, not all problems can or should be answered using a GIS. Classrooms, hiring committees, and textbooks a one-dimensional understanding of GIS that creates a dichotomy between those with  the discourse around GIS Skepticism and doubt is vital when considering GIS technology and work done using a GIS. It's important to ask questions such as: where is the data coming from? Why was the data collected? Who collected the data? 
 
 
-Furthermore, all GIS software lack features that woud make their use and application more inclusive. All data entered into a GIS must be "clean" and 
+Furthermore, all GIS software lack features that woud make their use and application more inclusive. All data entered into a GIS must be "clean" and formatted in a very specific way. This makes GIS an inherently exclusive software because people need to have the tools and technology to collect data in a certain way in order to put it into a GIS and analyze it. 
+
+A GIS needs to be able to display more than cartographic and attriubte information and beyone rasters and vectors. It needs to integrate non-geographic data such as story telling, mental maps, or oral histories.
+
 There are many way in which GIS can be used inappropriatley. Thus, none of my work should be used with the intent to surveil or harm people or the planet.
 
 
