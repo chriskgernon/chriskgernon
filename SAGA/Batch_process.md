@@ -1,4 +1,4 @@
-'''
+```
 ::set the path to your SAGA program
 SET PATH=%PATH%;c:\saga6
 
@@ -36,4 +36,4 @@ saga_cmd ta_channels 0 -ELEVATION=%od%\%pre%sink_removed.sgrd -SINKROUTE=%od%\%p
 ::print a completion message so that uneasy users feel confident that the batch script has finished!
 ECHO Processing Complete!
 PAUSE
-'''
+```
