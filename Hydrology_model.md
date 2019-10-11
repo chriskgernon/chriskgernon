@@ -28,3 +28,5 @@ After steps two and three, your DEM should look like this:
 8. Use the Channel Network tool to show where the streams are.
 
 ![Channel_Network](Channel_network.PNG)
+
+[Automating Hydrological Modeling](automating_hydrological_modeling.md)
