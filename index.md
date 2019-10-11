@@ -1,4 +1,4 @@
-[Blog Post](Blog_post.md)
+[Blog Post](blog_post.md)
 
 [QGIS Model](qgisModel.md)
 
