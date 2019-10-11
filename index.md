@@ -9,4 +9,4 @@ The fact that QGIS is a free, open-source technology had a big impact on the stu
 
 [QGIS Model](qgisModel.md)
 
-[Hydrological Modeling](Hydrological_model.md)
+[Hydrological Modeling](Hydrology_model.md)
