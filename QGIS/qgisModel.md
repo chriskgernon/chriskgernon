@@ -35,7 +35,7 @@ This [graph](./dist_plot.html) shows how the distance from the point impacts the
 
 [Model](./Distance_from_point_final.model3)
 
-[Test Data](./Model_test_data.gpkg)
+[Test Data](chriskgernon.github.io/Model_test_data.gpkg)
 
 The test data includes a shp file with Ammerican Community Survey (ACS) data already joined to the Census Tract shp file. However, I include the tables to show where the data came from. 
 
