@@ -35,6 +35,10 @@ This image shows the project of a mosaicked and projected NUM file for SRTM, whe
 
 ![SRTM Num File](./SRTM_Num_final.png)
 
+This image shows the project of a mosaicked and projected Num file for ASTR:
+
+![ASTR Num File](./NUM_aster.png)
+
 
 
 
