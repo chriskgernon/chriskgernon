@@ -29,4 +29,13 @@ After steps two and three, your DEM should look like this:
 
 ![Channel_Network](https://github.com/chriskgernon/chriskgernon.github.io/blob/master/Channel_network.PNG)
 
-[Automating Hydrological Modeling](automating_hydrological_modeling.md)
+[Batch script for automating Hydrological Model](automating_hydrological_modeling.md)
+
+This image shows the project of a mosaicked and projected NUM file for SRTM, where the majority of the image is data from SRTM (mustard color), but certain areas - particularly steep mountain regions and water bodies - stand out as data from different sources. 
+
+![SRTM Num File](./SRTM_Num_final.png)
+
+
+
+
+
