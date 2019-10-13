@@ -39,4 +39,4 @@ This [graph](./dist_plot.html) shows how the distance from the point impacts the
 
 The test data includes a shp file with Ammerican Community Survey (ACS) data already joined to the Census Tract shp file. However, I include the tables to show where the data came from. 
 
-[back to Main Page](index.md)
+[back to Main Page](https://github.com/chriskgernon/chriskgernon.github.io/blob/master/index.md)
