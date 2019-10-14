@@ -23,7 +23,7 @@ After steps two and three, your DEM should look like this:
 
 7. Use the Flow Accumulation (Top-Down) tool to calculate where the flow will accumulate. The darker the values, the more accumulation.
 
-![Flow Accumulation](https://github.com/chriskgernon/chriskgernon.github.io/blob/master/Flow_Accumulation.PNG)
+![Flow Accumulation](chriskgernon.github.io/Flow_Accumulation.PNG)
 
 8. Use the Channel Network tool to show where the streams are.
 
