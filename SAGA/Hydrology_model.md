@@ -1,4 +1,4 @@
- Using ASTER data Model 4003 from the US and Japan, I created a Hydrological Flow Model for the area around Mount Kilimanjaro, Tanzania. The analysis was done on SAGA open source GIS
+Using ASTER data Model 4003 from the US and Japan, I conducted a terrain anlysis for the area around Mount Kilimanjaro, Tanzania. The analysis was done on SAGA open source GIS.
  
  The following is a workflow of the process:
 
@@ -29,17 +29,31 @@ After steps two and three, your DEM should look like this:
 
 ![Channel_Network](https://github.com/chriskgernon/chriskgernon.github.io/blob/master/Channel_network.PNG)
 
+The analysis above was done using the SAGA interface. This method ends up being quite time consuming when you are interested in analyzing large amount of data. Thus, I wanted to do the analysis again but this time using a different method. First, I wanted to use the command line in order to streamline the analysis. Second, I wanted to use the time saved by using this method to analyze both SRTM and ASTER data to determine how they differ. 
+
+I started by writing and running batch scripts to automate the hydrological analysis process. Batch scripts allow users to change inputs quickly, making it easier to compare analysis using different inputs. 
+
 [Batch script for automating Hydrological Model](automating_hydrological_modeling.md)
 
-This image shows the project of a mosaicked and projected NUM file for SRTM, where the majority of the image is data from SRTM (mustard color), but certain areas - particularly steep mountain regions and water bodies - stand out as data from different sources. 
+Additionally, I examined the NUM files for both ASTER and SRTM to visualize the sources of data for each dataset.
+
+
+This image shows of a mosaicked and projected NUM file for SRTM. Most of the image uses data from SRTM, but steep mountains and water bodies stand out as data from different sources. 
 
 ![SRTM Num File](./SRTM_Num_final.png)
 
-This image shows the mosaicked and projected Num file for ASTR:
+This image shows the mosaicked and projected Num file for ASTR.
 
 ![ASTR Num File](./NUM_aster.png)
 
+After running an analysis of Mt. Kilimanjaro using both ASTER and SRTM data, I took the difference between the two elevation models using SAGA. This allowed me to determine the areas in the region with the most error.
 
+![Difference](./DEM_Diff_final.png)
+
+
+The difference between the two models is magnified when you look at the hillashade of the two models.
+
+![ASTER hillshade](./ASTER_hillshade_less_error.PNG) ![SRTM hillshade](./SRTM_hillshade_less_accurate.PNG)
 
 
 
