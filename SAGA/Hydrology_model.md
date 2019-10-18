@@ -29,7 +29,7 @@ After steps two and three, your DEM should look like this:
 
 ![Channel_Network](./Channel_network.PNG)
 
-The analysis above was done using the SAGA interface. This method ends up being quite time consuming when you are interested in analyzing large amount of data. Thus, I wanted to do the analysis again but this time using a different method. First, I wanted to use the command line in order to streamline the analysis. Second, I wanted to use the time saved by using this method to analyze both SRTM and ASTER data to determine how they differ. 
+The analysis above was done using the SAGA interface. This method ends up being quite time consuming when you are interested in analyzing large amounts of data. Thus, I wanted to do the analysis again but this time using a different method. First, I wanted to use the command line in order to streamline the analysis. Second, I wanted to use the time saved by using this method to analyze both SRTM and ASTER data to determine how they differ. 
 
 I started by writing and running batch scripts to automate the hydrological analysis process. Batch scripts allow users to change inputs quickly, making it easier to compare analysis using different inputs. 
 
@@ -62,6 +62,9 @@ SRTM Hillshade
 When comparing the two hillshades, there is an obivous difference betweeen the two. The red circle in the SRTM hillshade has obivous error shown by the flat divot while the ASTR hillshade is more accurate shown by the congruence inside the red circle with the other parts of the mountain.
 
 ![Accumulation Difference](./Accu_comp.PNG)
+Difference in Flow Accumulation between the two datasets.
+
+When comparing the flow accumulation between both datasets, there is major differences between the two in two regions as shown above. It is no coincidence the spots are located at the two steepest areas of the region because those are the areas where it's hardest to aquire accurate data. 
 
 ![Compare1](./Compare1.PNG)
 ![Compare2](./compare2.PNG)
@@ -71,7 +74,7 @@ The difference between the two channel networks shown above indicate a major dif
 
 
 
-Conclusion: ASTER is the better dataset when looking in mountanous regions. This is evident by the comparison of the two hillshades and when visualizing the NUM files. The visualization of the SRTM NUM file shows that SRTM used data from ASTER in the particularly mountainous regions.
+Conclusion: ASTER is the better dataset when looking in mountanous regions. This is evident by the comparison of the two hillshades and when visualizing the NUM files. The visualization of the SRTM NUM file shows that SRTM used data from ASTER in the particularly mountainous regions. Additionally, the visualization of the difference between the two flow accumulations indicate that one dataset got completely different results in the extrememly mountainous region than the other dataset. This difference shows that ASTR was more accurate than SRTM.
 
 
 Data Sources: NASA/METI/AIST/Japan Spacesystems, and U.S./Japan ASTER Science Team. ASTER Global Digital Elevation Model V003. 2019, distributed by NASA EODIS Land Processes DAAC
