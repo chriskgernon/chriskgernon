@@ -57,4 +57,4 @@ The difference between the two models is magnified when you look at the hillasha
 
 
 ![Compare1](./Compare1.PNG)
-![Compare2](./compare.PNG)
+![Compare2](./compare2.PNG)
