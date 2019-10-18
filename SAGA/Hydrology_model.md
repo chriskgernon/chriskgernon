@@ -53,8 +53,29 @@ After running an analysis of Mt. Kilimanjaro using both ASTER and SRTM data, I t
 
 The difference between the two models is magnified when you look at the hillashade of the two models.
 
-![ASTER hillshade](./ASTER_hillshade_less_error.PNG) ![SRTM hillshade](./SRTM_hillshade_less_accurate.PNG)
+![ASTER hillshade](./ASTER_hillshade_less_error.PNG) 
+ASTR Hillshade
 
+![SRTM hillshade](./SRTM_hillshade_less_accurate.PNG)
+SRTM Hillshade
+
+When comparing the two hillshades, there is an obivous difference betweeen the two. The red circle in the SRTM hillshade has obivous error shown by the flat divot while the ASTR hillshade is more accurate shown by the congruence inside the red circle with the other parts of the mountain.
+
+![Accumulation Difference](./Accu_comp.PNG)
 
 ![Compare1](./Compare1.PNG)
 ![Compare2](./compare2.PNG)
+
+The difference between the two channel networks shown above indicate a major difference between the data.
+
+
+
+
+Conclusion: ASTER is the better dataset when looking in mountanous regions. This is evident by the comparison of the two hillshades and when visualizing the NUM files. The visualization of the SRTM NUM file shows that SRTM used data from ASTER in the particularly mountainous regions.
+
+
+Data Sources: NASA/METI/AIST/Japan Spacesystems, and U.S./Japan ASTER Science Team. ASTER Global Digital Elevation Model V003. 2019, distributed by NASA EODIS Land Processes DAAC
+
+NASA JPL. NASA Shuttle Radar Topography Mission Global 1 arc second. 2013, distributed by NASA EOSDIS Land Processes DAAC
+
+Ran using SAGA version 6.2
