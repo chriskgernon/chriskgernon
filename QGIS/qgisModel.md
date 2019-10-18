@@ -23,9 +23,9 @@ In the first lab, we created a model to calculate direction and distrance from a
 
 Here are two maps that show the results of my model using the test data below.
 
-![Cardinal Direction](Cardinal_direction_map.png)
+![Cardinal Direction](./Cardinal_direction_map.png)
 
-![Distance Map](Distance_map.png)
+![Distance Map](./Distance_map.png)
 
 Here are two graphs I made using the entire state of Kansas. I used an arbitrary point in the Northeast corner of the state as the City Center and all the census tracts as the Input Features. 
 
