@@ -56,4 +56,5 @@ The difference between the two models is magnified when you look at the hillasha
 ![ASTER hillshade](./ASTER_hillshade_less_error.PNG) ![SRTM hillshade](./SRTM_hillshade_less_accurate.PNG)
 
 
-
+![Compare1](./Compare1.PNG)
+![Compare2](./compare.PNG)
