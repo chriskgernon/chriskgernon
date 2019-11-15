@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet-measure.js"></script>
+        <script src="data/DarEsSalaamSubwards_1.js"></script>
+        <script src="data/WasteSites_2.js"></script>
+        <script src="data/DrainLocations_3.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:19, minZoom:11
+        }).fitBounds([[-6.878035318672123,39.14054491286879],[-6.726134876871542,39.35436820639403]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var measureControl = new L.Control.Measure({
+            position: 'topleft',
+            primaryLengthUnit: 'meters',
+            secondaryLengthUnit: 'kilometers',
+            primaryAreaUnit: 'sqmeters',
+            secondaryAreaUnit: 'hectares'
+        });
+        measureControl.addTo(map);
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .innerHTML = '';
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .className += ' fas fa-ruler';
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+            map.setMaxBounds(map.getBounds());
+        }
+        var layer_Basemap_0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            opacity: 1.0,
+            attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
+            minZoom: 11,
+            maxZoom: 19,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_Basemap_0;
+        map.addLayer(layer_Basemap_0);
+        function pop_DarEsSalaamSubwards_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>Average Minimum Distance</strong><br />' + (feature.properties['avgmindist'] !== null ? Autolinker.link(String(feature.properties['avgmindist'])) : '') + '</td>\
+                    </tr>\
+					<tr>\
+                        <td colspan="2"><strong>Number of Waste Sites</strong><br />' + (feature.properties['wastesites'] !== null ? Autolinker.link(String(feature.properties['wastesites'])) : '') + '</td>\
+                    </tr>\
+					<tr>\
+                        <td colspan="2"><strong>Number of Drains</strong><br />' + (feature.properties['drains'] !== null ? Autolinker.link(String(feature.properties['drains'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+		opacity_red = .65
+        function style_DarEsSalaamSubwards_1_0(feature) {
+            if (feature.properties['avgmindist'] >= 0 && feature.properties['avgmindist'] <= 17.939481 ) {
+                return {
+                pane: 'pane_DarEsSalaamSubwards_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: opacity_red,
+                fillColor: 'rgba(255,255,255,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['avgmindist'] >= 17.939481 && feature.properties['avgmindist'] <= 20.926029 ) {
+                return {
+                pane: 'pane_DarEsSalaamSubwards_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: opacity_red,
+                fillColor: 'rgba(255,191,191,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['avgmindist'] >= 20.926029 && feature.properties['avgmindist'] <= 23.328208 ) {
+                return {
+                pane: 'pane_DarEsSalaamSubwards_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: opacity_red,
+                fillColor: 'rgba(255,128,128,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['avgmindist'] >= 23.328208 && feature.properties['avgmindist'] <= 28.864233 ) {
+                return {
+                pane: 'pane_DarEsSalaamSubwards_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: opacity_red,
+                fillColor: 'rgba(255,64,64,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['avgmindist'] >= 28.864233) {
+                return {
+                pane: 'pane_DarEsSalaamSubwards_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: opacity_red,
+                fillColor: 'rgba(255,0,0,1.0)',
+                interactive: true,
+            }
+            }
+        }
+        map.createPane('pane_DarEsSalaamSubwards_1');
+        map.getPane('pane_DarEsSalaamSubwards_1').style.zIndex = 401;
+        map.getPane('pane_DarEsSalaamSubwards_1').style['mix-blend-mode'] = 'normal';
+        var layer_DarEsSalaamSubwards_1 = new L.geoJson(json_DarEsSalaamSubwards_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_DarEsSalaamSubwards_1',
+            layerName: 'layer_DarEsSalaamSubwards_1',
+            pane: 'pane_DarEsSalaamSubwards_1',
+            onEachFeature: pop_DarEsSalaamSubwards_1,
+            style: style_DarEsSalaamSubwards_1_0,
+        });
+        bounds_group.addLayer(layer_DarEsSalaamSubwards_1);
+        map.addLayer(layer_DarEsSalaamSubwards_1);
+        function pop_WasteSites_2(feature, layer) {
+            var popupContent = '<table>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_WasteSites_2_0() {
+            return {
+                pane: 'pane_WasteSites_2',
+                radius: 3.5,
+                opacity: 1,
+                color: 'rgba(63,63,63,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,0,0,1.0)',
+                interactive: false,
+            }
+        }
+        map.createPane('pane_WasteSites_2');
+        map.getPane('pane_WasteSites_2').style.zIndex = 402;
+        map.getPane('pane_WasteSites_2').style['mix-blend-mode'] = 'normal';
+        var layer_WasteSites_2 = new L.geoJson(json_WasteSites_2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_WasteSites_2',
+            layerName: 'layer_WasteSites_2',
+            pane: 'pane_WasteSites_2',
+            onEachFeature: pop_WasteSites_2,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_WasteSites_2_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_WasteSites_2);
+        function pop_DrainLocations_3(feature, layer) {
+            var popupContent = '<table>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_DrainLocations_3_0() {
+            return {
+                pane: 'pane_DrainLocations_3',
+                radius: 3.5,
+                opacity: 1,
+                color: 'rgba(63,63,63,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,255,255,1.0)',
+                interactive: false,
+            }
+        }
+        map.createPane('pane_DrainLocations_3');
+        map.getPane('pane_DrainLocations_3').style.zIndex = 403;
+        map.getPane('pane_DrainLocations_3').style['mix-blend-mode'] = 'normal';
+        var layer_DrainLocations_3 = new L.geoJson(json_DrainLocations_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_DrainLocations_3',
+            layerName: 'layer_DrainLocations_3',
+            pane: 'pane_DrainLocations_3',
+            onEachFeature: pop_DrainLocations_3,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_DrainLocations_3_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_DrainLocations_3);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/DrainLocations_3.png" /> Drain Locations': layer_DrainLocations_3,'<img src="legend/WasteSites_2.png" /> Waste Sites': layer_WasteSites_2,'Average Minimum Distance From Waste Site to Drain Location (m)<br /><table><tr><td style="text-align: center;"><img src="legend/DarEsSalaamSubwards_1_311790.png" /></td><td>3.1 - 17.9</td></tr><tr><td style="text-align: center;"><img src="legend/DarEsSalaamSubwards_1_1792091.png" /></td><td>17.9 - 20.9</td></tr><tr><td style="text-align: center;"><img src="legend/DarEsSalaamSubwards_1_2092332.png" /></td><td>20.9 - 23.3</td></tr><tr><td style="text-align: center;"><img src="legend/DarEsSalaamSubwards_1_2332893.png" /></td><td>23.3 - 28.9</td></tr><tr><td style="text-align: center;"><img src="legend/DarEsSalaamSubwards_1_2894064.png" /></td><td>28.9 - 40.6</td></tr></table>': layer_DarEsSalaamSubwards_1,"Basemap": layer_Basemap_0,},{collapsed:false}).addTo(map);
+        setBounds();
+        </script>
+    </body>
+</html>
