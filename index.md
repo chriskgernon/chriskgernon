@@ -10,4 +10,4 @@ This link shows modeling I've done using QGIS.
 
 This link consists of my work done using SAGA, a GIS used to edit spatial data. 
 
-[Leaflet](.Dar_Es_Salaam/leaflet_final/qgis2web_2019_11_14-22_50_51_673447/index.html)
+[Leaflet](./Dar_Es_Salaam/leaflet_final/qgis2web_2019_11_14-22_50_51_673447/index.html)
