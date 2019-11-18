@@ -74,6 +74,11 @@ This [graph](./dist_plot.html) shows how the distance from the point impacts the
 
 Here are two maps that show the results of the model using the Wichita metropolitcan area from the test data below. 
 
+![Wichitacard](./dirwichita.png)
+
+![Wichitadist](./distwichita.png)
+
+
 [Model](./Distance_from_point_final.model3)
 
 [Test Data](./Model_test_data.gpkg)
