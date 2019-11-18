@@ -26,14 +26,12 @@ This model takes two inputs. The first input can be a polygon or a point. It is 
 
 SQL in model (distance):
 
-The SQL takes the centroid of the original polygon and transforms it to EPSG: 4326 so that we can caluclate the distance accurately. It then calculates the distance from the CBD to each centroid in each census tract
+The SQL takes the centroid of the original polygon and transforms it to EPSG: 4326 so that we can caluclate the distance accurately. It then calculates the distance from the CBD to each centroid in each census tract.
 '''
 SELECT *, ST_distance(centroid(transform(geometry, 4326)), transform((SELECT geometry from input1), 4326), TRUE  ) as [%  concat( @fieldnameprefix, 'Dist')%] FROM input2
 '''
 
 Field Calculator Direction (degrees):
-
-
 
 '''
 degrees( azimuth(  
@@ -46,6 +44,8 @@ transform(centroid($geometry), layer_property(  @inputfeatures2 ,  'crs'), 'EPSG
 ))
 '''
 
+Direction is calculated using the azimuth() function. The azimuth() function calculates direction in radians. Thus, the degrees() function is used to convert direction from radians to degrees.
+
 Field Calculator Direction (cardinal direction):
 '''
 CASE
@@ -56,11 +56,11 @@ ELSE 'North'
 END
 
 '''
-
+The results from the direction calculator are divided into 4 sections and assigned cardinal directions. 
 
 ![Model](Model.PNG)
 
-Here are two maps that show the results of my model using the test data below.
+Here are two maps that show the results of my model using the entire states of KS from the test data below.
 
 ![Cardinal Direction](./Cardinal_direction_map.png)
 
