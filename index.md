@@ -1,6 +1,6 @@
 Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geography. This semester I am taking an Open Source GIS class. I will be continually updating this Github page with the projects we do in the class. Hope you enjoy.
 
-[Blog Post](blog_post.md)
+[Blog Posts](./blogposts2/blogposts.md)
 
 [QGIS](./QGIS/qgisModel.md)
 
