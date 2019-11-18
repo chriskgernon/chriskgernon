@@ -72,10 +72,12 @@ This [graph](./dir_plot.html) shows how the direction impacts the median rent ba
 
 This [graph](./dist_plot.html) shows how the distance from the point impacts the median rent based on Census Tracts in Kansas. The jump in Median Rent around 50k is the Kansas City Metropolitan area and the jump around 250k is the Wichita Metropolitan area.
 
+Here are two maps that show the results of the model using the Wichita metropolitcan area from the test data below. 
+
 [Model](./Distance_from_point_final.model3)
 
 [Test Data](./Model_test_data.gpkg)
 
-The test data includes a shp file with Ammerican Community Survey (ACS) data already joined to the Census Tract shp file. However, I include the tables to show where the data came from. 
+The test data includes a shp file with Ammerican Community Survey (ACS) data already joined to the Census Tract shp file. I include the tables to show where the data came from. Additionally, I include a shp file of the Wichita metropolitan area. 
 
 [back to Main Page](chriskgernon.github.io/index.md)
