@@ -27,13 +27,13 @@ This model takes two inputs. The first input can be a polygon or a point. It is 
 SQL in model (distance):
 
 The SQL takes the centroid of the original polygon and transforms it to EPSG: 4326 so that we can caluclate the distance accurately. It then calculates the distance from the CBD to each centroid in each census tract.
-'''
+```
 SELECT *, ST_distance(centroid(transform(geometry, 4326)), transform((SELECT geometry from input1), 4326), TRUE  ) as [%  concat( @fieldnameprefix, 'Dist')%] FROM input2
-'''
+```
 
 Field Calculator Direction (degrees):
 
-'''
+```
 degrees( azimuth(  
 
 transform(make_point(  @Mean_coordinate_s__OUTPUT_maxx , @Mean_coordinate_s__OUTPUT_maxy ), 
@@ -42,12 +42,12 @@ layer_property( @citycenter, 'crs'), 'EPSG:54004'),
 transform(centroid($geometry), layer_property(  @inputfeatures2 ,  'crs'), 'EPSG:54004')
 
 ))
-'''
+```
 
 Direction is calculated using the azimuth() function. The azimuth() function calculates direction in radians. Thus, the degrees() function is used to convert direction from radians to degrees.
 
 Field Calculator Direction (cardinal direction):
-'''
+```
 CASE
 WHEN attribute(concat(@fieldnameprefix, 'Dir')) >= 45 AND  attribute(concat(@fieldnameprefix, 'Dir')) <= 135 THEN 'East' 
 WHEN attribute(concat(@fieldnameprefix, 'Dir')) >135 AND attribute(concat(@fieldnameprefix, 'Dir')) <=225 THEN 'South'
@@ -55,7 +55,7 @@ WHEN attribute(concat(@fieldnameprefix, 'Dir')) >225 AND attribute(concat(@field
 ELSE 'North'
 END
 
-'''
+```
 The results from the direction calculator are divided into 4 sections and assigned cardinal directions. 
 
 ![Model](Model.PNG)
