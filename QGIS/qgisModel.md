@@ -1,4 +1,7 @@
 ## My First QGIS Model
+
+Background: 
+
 I am Chris Gernon, a junior at Middlebury College. I am taking a class that focuses on the open source element of GIS and other open source programs.
 
 The discourse surrounding GIS is one of great concern for me. GIS is a contradictory technology that simultaneously marginalizes and empowers people and community members. Many view GIS and the work done using GIS as objective and factual. In reality, work done with GIS is incredibly subjective and bias. Because you download shapefiles and other data types from the internet that include neat rows and columns of data, it is easy to forget that a human was the one that collected and made the data. Thus, no data collection process is value free.
@@ -11,7 +14,48 @@ A GIS needs to be able to display more than cartographic and attribute informati
 
 There are many ways in which GIS can be used inappropriately. Thus, none of my work should be used with the intent to surveil or harm people or the planet.
 
+QGIS:
+
 In the first lab, we created a model to calculate direction and distance from a point.
+
+The purpose of a model is to allow users to reduce the amount of redundant clicking they have to do. By only having to put in the initial parameters, using a model allows user to experiment with different parameters and data in an efficient manner. The model automates the user experience.
+
+Model:
+
+This model takes two inputs. The first input can be a polygon or a point. It is supposed to be the CBD of an urban area. Users can input a polygon and, by using the centroids and mean coordinates functions, the model will find the centroid of the polygon. However, users cannot put in multiple polygons. Thus, if you have a whole metro area, you have to dissolve all of the tracts before putting the parameters through the model.
+
+SQL in model (distance):
+
+The SQL takes the centroid of the original polygon and transforms it to EPSG: 4326 so that we can caluclate the distance accurately. It then calculates the distance from the CBD to each centroid in each census tract
+'''
+SELECT *, ST_distance(centroid(transform(geometry, 4326)), transform((SELECT geometry from input1), 4326), TRUE  ) as [%  concat( @fieldnameprefix, 'Dist')%] FROM input2
+'''
+
+Field Calculator Direction (degrees):
+
+
+
+'''
+degrees( azimuth(  
+
+transform(make_point(  @Mean_coordinate_s__OUTPUT_maxx , @Mean_coordinate_s__OUTPUT_maxy ), 
+layer_property( @citycenter, 'crs'), 'EPSG:54004'),
+
+transform(centroid($geometry), layer_property(  @inputfeatures2 ,  'crs'), 'EPSG:54004')
+
+))
+'''
+
+Field Calculator Direction (cardinal direction):
+'''
+CASE
+WHEN attribute(concat(@fieldnameprefix, 'Dir')) >= 45 AND  attribute(concat(@fieldnameprefix, 'Dir')) <= 135 THEN 'East' 
+WHEN attribute(concat(@fieldnameprefix, 'Dir')) >135 AND attribute(concat(@fieldnameprefix, 'Dir')) <=225 THEN 'South'
+WHEN attribute(concat(@fieldnameprefix, 'Dir')) >225 AND attribute(concat(@fieldnameprefix, 'Dir')) <=315 THEN 'West'
+ELSE 'North'
+END
+
+'''
 
 
 ![Model](Model.PNG)
