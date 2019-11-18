@@ -76,7 +76,7 @@ Here are two maps that show the results of the model using the Wichita metropoli
 
 ![Wichitacard](./dirwichita.png)
 
-![Wichitadist](./distwichita.png)
+![Wichitadist](./distwchita.png)
 
 
 [Model](./Distance_from_point_final.model3)
