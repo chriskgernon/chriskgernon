@@ -1,6 +1,6 @@
 Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geography. This semester I am taking an Open Source GIS class. We will practice techniques that include data acquisition and preparation for analysis, spatial SQL database queries, automating analysis, spatial interpolation, testing sensitivity to error and uncertainty, and data visualization. We will read and apply critical research of GIS as a subject and with GIS as a methodology. I will be continually updating this Github page with the projects we do in the class. Hope you enjoy.
 
-[Blog Posts](./blogposts2/blogposts.md)
+[Blog Posts](./blogpost2/blogposts.md)
 
 [QGIS](./QGIS/qgisModel.md)
 
