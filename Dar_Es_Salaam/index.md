@@ -1,4 +1,4 @@
-```
+```ruby
 /*fixing geometries and reprojecting*/
 create table wards37s as
 select id, fid, ward_name,
