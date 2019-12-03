@@ -152,3 +152,4 @@ set avgmindist=wardminavg.avg
 from wardminavg
 where wards37s.ward_name=wardminavg.ward;
 ```
+Here is the result of our analysis! [Leaflet](./Dar_Es_Salaam/leaflet_final/qgis2web_2019_11_14-22_50_51_673447/index.html)
