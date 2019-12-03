@@ -1,7 +1,11 @@
 I was interested in answering the question: which subwards are most at risk for drain blockages during floods?
 
 
-Using data from the Resilience Academy and Ramani Huria, I analyzed the minimum average distance between drains and waste sites in each subward in Dar Es Salaam in order to offer an indication for which subwards are most likely to have drain blockages during flooding. We assumed that the closer a drain was to a waste site, the more likely it is for it to be blocked during flooding. We used layers from Open Street Maps to get data on the buildings in Dar Es Salaam, and Resiliency Academy for the data layer for subwards.
+Using data from the Resilience Academy and Ramani Huria, I analyzed the minimum average distance between drains and waste sites in each subward in Dar Es Salaam in order to offer an indication for which subwards are most likely to have drain blockages during flooding. We assumed that the closer a drain was to a waste site, the more likely it is for it to be blocked during flooding. 
+
+I used OpenStreetMap data collected through the Rumani Huria Project to analyze the spatial relationship between drains and waste sites in Dar es Salaam. PostGIS and the DB Manager of QGIS were used to find the average distance from drains to the nearest waste sites within a 50 m buffer by subward. Leaflet was used to visualize the output. The qgis2web plugin in QGIS allowed for the creation of the leaflet map.
+
+[SQL Code](./waste&drains.sql/)
 ```sql
 /*Code written by Chris Gernon and Kufre Nkereuwem*/
 /*fixing geometries and reprojecting*/
