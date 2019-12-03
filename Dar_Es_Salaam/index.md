@@ -1,4 +1,4 @@
-'''
+```
 /*fixing geometries and reprojecting*/
 create table wards37s as
 select id, fid, ward_name,
@@ -146,4 +146,4 @@ update wards37s
 set avgmindist=wardminavg.avg
 from wardminavg
 where wards37s.ward_name=wardminavg.ward;
-'''
+```
