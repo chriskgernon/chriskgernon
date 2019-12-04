@@ -7,6 +7,7 @@ Using data from the Resilience Academy and Ramani Huria, I analyzed the minimum 
 
 I used OpenStreetMap data (from [this link](https://www.openstreetmap.org/#map=4/38.01/-95.84) collected through the Rumani Huria Project (from [this link](https://resilienceacademy.ac.tz/)) to analyze the spatial relationship between drains and waste sites in Dar es Salaam. PostGIS and the DB Manager of QGIS were used to find the average distance from drains to the nearest waste sites within a 50 m buffer by subward. Leaflet was used to visualize the output. The qgis2web plugin in QGIS allowed for the creation of the leaflet map.
 
+This is the batch script I used to parse through OpenStreetMap files and load into a PostGIS database.
 [Batch Script](./convertOSM.bat/)
 
 [SQL Code](./waste&drains.sql/)
