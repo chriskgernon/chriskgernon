@@ -1,9 +1,11 @@
-I was interested in answering the question: which subwards are most at risk for drain blockages during floods?
+Dar Es Salaam is a city that is uniquely susceptible to floodings. Visit this [link](https://www.worldbank.org/en/news/feature/2019/10/01/wading-out-the-storm---flood-risk-and-poverty-in-dar-es-salaam)to get an understanding of how extensive and widespread Dar Es Salaam's flooding is.
+
+Given the issue of flooding in Dar Es Salaam, I was interested in answering the question: which subwards are most at risk for drain blockages during floods?
 
 
 Using data from the Resilience Academy and Ramani Huria, I analyzed the minimum average distance between drains and waste sites in each subward in Dar Es Salaam in order to offer an indication for which subwards are most likely to have drain blockages during flooding. We assumed that the closer a drain was to a waste site, the more likely it is for it to be blocked during flooding. 
 
-I used OpenStreetMap data (from [this link](https://www.openstreetmap.org/#map=4/38.01/-95.84) collected through the Rumani Huria Project (from [this link](https://resilienceacademy.ac.tz/) to analyze the spatial relationship between drains and waste sites in Dar es Salaam. PostGIS and the DB Manager of QGIS were used to find the average distance from drains to the nearest waste sites within a 50 m buffer by subward. Leaflet was used to visualize the output. The qgis2web plugin in QGIS allowed for the creation of the leaflet map.
+I used OpenStreetMap data (from [this link](https://www.openstreetmap.org/#map=4/38.01/-95.84) collected through the Rumani Huria Project (from [this link](https://resilienceacademy.ac.tz/)) to analyze the spatial relationship between drains and waste sites in Dar es Salaam. PostGIS and the DB Manager of QGIS were used to find the average distance from drains to the nearest waste sites within a 50 m buffer by subward. Leaflet was used to visualize the output. The qgis2web plugin in QGIS allowed for the creation of the leaflet map.
 
 [SQL Code](./waste&drains.sql/)
 
@@ -183,3 +185,7 @@ from wardminavg
 where wards37s.ward_name=wardminavg.ward;
 ```
 Here is the result of our analysis! [Leaflet](./leaflet_final/qgis2web_2019_11_14-22_50_51_673447/index.html)
+
+Conclusion and Why Results Matter:
+
+Drain blockage and flooding are issues in Dar Es Salaam. Thus, if the city were to prioritize removing drain blockages during heavy rain to prevent the exacerbation of flooding, they should prioritize the subwards with low minimum average distances.
