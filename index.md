@@ -8,7 +8,9 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 
 This link shows modeling I've done using QGIS.
 
-#[SAGA](./SAGA/Hydrology_model.md)
+# Using SAGA to model Hydrology and Error
+
+[SAGA](./SAGA/Hydrology_model.md)
 
 This link consists of my work done using SAGA. I used a QGIS used to edit spatial data. 
 
