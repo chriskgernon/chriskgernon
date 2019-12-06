@@ -2,7 +2,7 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 
 [Blog Posts](./blogpost2/blogposts.md)
 
-#Modeling Direction and Distance in QGIS
+# Modeling Direction and Distance in QGIS
 
 [QGIS](./QGIS/qgisModel.md)
 
