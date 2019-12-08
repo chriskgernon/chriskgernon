@@ -4,11 +4,11 @@ Background:
 
 I am Chris Gernon, a junior at Middlebury College. I am taking a class that focuses on the open source element of GIS and other open source programs.
 
-The discourse surrounding GIS is one of great concern for me. GIS is a contradictory technology that simultaneously marginalizes and empowers people and community members. Many view GIS and the work done using GIS as objective and factual. In reality, work done with GIS is incredibly subjective and bias. Because you download shapefiles and other data types from the internet that include neat rows and columns of data, it is easy to forget that a human was the one that collected and made the data. Thus, no data collection process is value free.
+The discourse surrounding GIS is one of great concern for me. GIS is a contradictory technology that simultaneously marginalizes and empowers people and community members (Seiber 2007). Many view GIS and the work done using GIS as objective and factual. In reality, work done with GIS is incredibly subjective and bias. Because you download shapefiles and other data types from the internet that include neat rows and columns of data, it is easy to forget that a human was the one that collected and made the data. Thus, no data collection process is value free.
 
-Many educators, hiring committees, or learning material frame GIS as a solution to many of the world’s problems. However, not all problems can or should be answered using a GIS. Classrooms, hiring committees, and textbooks a one-dimensional understanding of GIS that creates a dichotomy between those with the discourse around GIS Skepticism and doubt is vital when considering GIS technology and work done using a GIS. It's important to ask questions such as: where is the data coming from? Why was the data collected? Who collected the data?
+Many educators, hiring committees, or learning material frame GIS as a solution to many of the world’s problems (Wing and Martin, 2007). However, not all problems can or should be answered using a GIS. Classrooms, hiring committees, and textbooks a one-dimensional understanding of GIS that creates a dichotomy between those with the discourse around GIS Skepticism and doubt is vital when considering GIS technology and work done using a GIS. It's important to ask questions such as: where is the data coming from? Why was the data collected? Who collected the data?
 
-Furthermore, all GIS software lack features that would make their use and application more inclusive. All data entered into a GIS must be "clean" and formatted in a very specific way. This makes GIS an inherently exclusive software because people need to have the tools and technology to collect data in a certain way in order to put it into a GIS and analyze it.
+Furthermore, all GIS software lack features that would make their use and application more inclusive. All data entered into a GIS must be "clean" and formatted in a very specific way. This makes GIS an inherently exclusive software because people need to have the tools and technology to collect data in a certain way in order to put it into a GIS and analyze it(Seiber 2007).
 
 A GIS needs to be able to display more than cartographic and attribute information and beyond raster’s and vectors. It needs to integrate non-geographic data such as storytelling, mental maps, or oral histories.
 
@@ -70,7 +70,7 @@ Here are two graphs I made using the entire state of Kansas. I used an arbitrary
 
 This [graph](./dir_plot.html) shows how the direction impacts the median rent based on Census Tracts in Kansas.
 
-This [graph](./dist_plot.html) shows how the distance from the point impacts the median rent based on Census Tracts in Kansas. The jump in Median Rent around 50k is the Kansas City Metropolitan area and the jump around 250k is the Wichita Metropolitan area.
+This [graph](./dist_plot.html) shows how the distance from the point impacts the median rent based on Census Tracts in Kansas. The jump in Median Rent around 50k is the Kansas City Metropolitan area and the jump around 250k is the Wichita Metropolitan area. This shows that land closer to city is more valuable than land farther from city centers. Cities typically have more services and amenities than areas outside cities. People are willing to pay more to live closer to these amenities. 
 
 Here are two maps that show the results of the model using the Wichita metropolitcan area from the test data below. 
 
