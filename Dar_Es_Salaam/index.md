@@ -1,4 +1,6 @@
-Dar Es Salaam is a city that is uniquely susceptible to floodings. Visit this [link](https://www.worldbank.org/en/news/feature/2019/10/01/wading-out-the-storm---flood-risk-and-poverty-in-dar-es-salaam)to get an understanding of how extensive and widespread Dar Es Salaam's flooding is.
+Dar Es Salaam is a city that is uniquely susceptible to floodings. Visit this [link](https://www.worldbank.org/en/news/feature/2019/10/01/wading-out-the-storm---flood-risk-and-poverty-in-dar-es-salaam)to get an understanding of how extensive and widespread Dar Es Salaam's flooding is. The picture below is from a flood that happened in 2015.
+
+![flooding](./flooding.jpeg)
 
 Given the issue of flooding in Dar Es Salaam, I was interested in answering the question: which subwards are most at risk for drain blockages during floods?
 
