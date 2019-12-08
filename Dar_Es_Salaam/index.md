@@ -4,7 +4,7 @@ Dar Es Salaam is a city that is uniquely susceptible to floodings. Visit this [l
 
 Functioning drains are crucial to mitigate flooding. However, Dar Es Salaam has poor waste removal infrastructure which results in waste and trash clogging drains (see image below). Drain blockage greatly exacerbates Dar Es Salaams already large flooding issue. 
 
-
+![waste site](./waste_site.jpg)     ![drain](./drainage-africasanaa_0.png/)
 
 
 Given the circumstances in Dar Es Salaam, I was interested in answering the question: which subwards are most at risk for drain blockages during floods?
