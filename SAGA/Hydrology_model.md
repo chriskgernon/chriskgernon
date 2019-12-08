@@ -74,7 +74,14 @@ The difference between the two channel networks shown above indicate a major dif
 
 
 
-Conclusion: ASTER is the better dataset when looking in mountanous regions. This is evident by the comparison of the two hillshades and when visualizing the NUM files. The visualization of the SRTM NUM file shows that SRTM used data from ASTER in the particularly mountainous regions. Additionally, the visualization of the difference between the two flow accumulations indicate that one dataset got completely different results in the extrememly mountainous region than the other dataset. This difference shows that ASTR was more accurate than SRTM.
+Conclusion: ASTER is the better dataset when looking in mountanous regions. This is evident by the comparison of the two hillshades and when visualizing the NUM files. The visualization of the SRTM NUM file shows that SRTM used data from ASTER in the particularly mountainous regions. Additionally, the visualization of the difference between the two flow accumulations indicate that one dataset got completely different results in the extrememly mountainous region than the other dataset. This difference shows that ASTR was more accurate than SRTM. Steep ravines cause major uncertainty (like in the places circled in the two hillshades) because there are known values on either side of the ravine but the values on either side are unknown which confuses the flow. This confusion is visualized by the different channel networks in the pictures above. Also, elevation sometimes looks higher over valleys because clouds are constantly over the valley, so the satallite cannot get accurate data. 
+
+Both datasets have significantly different results around the lake. This is because it is a man-made lake created by a dam. Thus, it does not follow conventional flow. Thus, the model just guesses where the flow might go. However, this is not a significant issue because you understand where the water enters and where the water leaves. 
+
+Additionally, both datasets have uncertainty arises in areas where humans have modified the landscape for irrigation and farming purposes. This includes modifying river channels and transforming streams into irrigation channels.
+
+Lastly, difference between the channel networks between the two datasets derives from vegetation hiding natural features. Rivers that have trees on both sides of the shore are going to look higher than area around it because the radar is going to reflect from the canopy not river. And the area next to the river that does not have any canopy will appear lower because the radar will be able to go all the way to the ground before reflecting back up. 
+
 
 
 Data Sources: NASA/METI/AIST/Japan Spacesystems, and U.S./Japan ASTER Science Team. ASTER Global Digital Elevation Model V003. 2019, distributed by NASA EODIS Land Processes DAAC
