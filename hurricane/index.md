@@ -115,15 +115,18 @@ GeoDa is a free and open source software tool that serves as an introduction to 
 First, I put my county file from my database into QGIS. The Heatmap (Kernal Density) function in QGIS requires point geometry input. So I took the centroids of my county polygons.
 ![centroids](./centroids.PNG/)
 
-Next, I used the Heatmap (Kernal Density) function with the inputs (left) and got this output (right):
+Next, I used the Heatmap (Kernal Density) function with the inputs (top) and got this output (bottom):
 
-|Input|Output|
-![kernal](./kernal.PNG/)![output](./output.PNG/)
+|Input|
+| ------------- |
+![kernal](./kernal.PNG/)
 
-  | Place Type| Count|
+|Output|
+| ------------- |
+![output](./output.PNG/)
 
-|![kernal](./kernal.PNG/)|![output](./output.PNG/)|
-| ------------- | ------------- |
+  
+
 
 
 
