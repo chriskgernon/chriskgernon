@@ -120,6 +120,14 @@ Next, I used the Heatmap (Kernal Density) function with the inputs (left) and go
 |Input|Output|
 |![kernal](./kernal.PNG/)|![output](./output.PNG/)|
 
+  | Place Type| Count|
+| ------------- | ------------- |
+| admin|26|
+| city|271|
+|neighborhood|1|
+|poi|21|
+|NA|9681|
+
 
 
 
