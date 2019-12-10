@@ -118,6 +118,7 @@ Next, I created a spatial weights matrix.
 ![matrix](./matrix.PNG/)
 
 After, I calculated the local G* statistic.
+
 ![Gstar](./Gstar.PNG/)
 
 
