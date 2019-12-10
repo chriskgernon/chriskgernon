@@ -116,9 +116,8 @@ First, I put my county file from my database into QGIS. The Heatmap (Kernal Dens
 ![centroids](./centroids.PNG/)
 
 Next, I used the Heatmap (Kernal Density) function with the inputs (left) and got this output (right):
-|Input            |  Output|
-:-------------------------:|:-------------------------:
-|![kernal](./kernal.PNG/)  |  ![output](./output.PNG/)|
+|Input|Output|
+|![kernal](./kernal.PNG/) | ![output](./output.PNG/)|
 
 
 
