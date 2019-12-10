@@ -3,7 +3,7 @@
 Through QGIS and DB Manager, prepare twitter and county data for spatial analysis and count tweets by County with a spatial join.
 
 ### Cleaning and gathering data
-First, I added a projected coordinate system to my PostGIS database. I chose the USA Contiguous Lambert Conformal Conic projection because I needed a projection that works well for calculating distance and area over the Eastern United States. It did not exists in the database's ```spatial_ref_sys``` table so I went to https://www.spatialreference.org and copied the PostGIS insert statement. The statement inexplicable has a 9 to the beginning of the first CRS id, so I removed the 9 in order to make the code work.
+First, look in my methods section of my Twitter lab to learn how I uploaded twitter data and county data into my PostGIS database. Second, I added a projected coordinate system to my PostGIS database. I chose the USA Contiguous Lambert Conformal Conic projection because I needed a projection that works well for calculating distance and area over the Eastern United States. It did not exists in the database's ```spatial_ref_sys``` table so I went to https://www.spatialreference.org and copied the PostGIS insert statement. The statement inexplicable has a 9 to the beginning of the first CRS id, so I removed the 9 in order to make the code work.
 
 ```SQL
 INSERT into spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) values ( 102004, 'esri', 102004, '+proj=lcc +lat_1=33 +lat_2=45 +lat_0=39 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs ', 'PROJCS["USA_Contiguous_Lambert_Conformal_Conic",GEOGCS["GCS_North_American_1983",DATUM["North_American_Datum_1983",SPHEROID["GRS_1980",6378137,298.257222101]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Lambert_Conformal_Conic_2SP"],PARAMETER["False_Easting",0],PARAMETER["False_Northing",0],PARAMETER["Central_Meridian",-96],PARAMETER["Standard_Parallel_1",33],PARAMETER["Standard_Parallel_2",45],PARAMETER["Latitude_Of_Origin",39],UNIT["Meter",1],AUTHORITY["EPSG","102004"]]');
@@ -27,6 +27,7 @@ UPDATE november
 SET geom3 = st_transform( st_setsrid( st_makepoint(lng,lat),4326), 102004);
 
 UPDATE counties SET geometry = st_transform(geometry,102004);
+
 
 SELECT populate_geometry_columns('counties':: regclass);
 
@@ -105,3 +106,11 @@ UPDATE counties
 SET ndti = (1*1.0000)*(dorian_tweets- november_tweets)/(dorian_tweets + november_tweets) *(1*1.0000)
 where dorian_tweets + november_tweets >0;
 ```
+
+## Spatial Hotspot Analysis with GeoDa
+
+GeoDa is a free and open source software tool that serves as an introduction to spatial data analysis. It is designed to facilitate new insights from data analysis by exploring and modeling spatial patterns.
+
+## Heatmap (Kernal Density) Visualization of Tweets
+
+
