@@ -65,7 +65,9 @@ ts_plot(winterTweets, by="hours", color= "#565656")+
   
   ## FIND ONLY PRECISE GEOGRAPHIES
   
- reference for lat_lng function: https://rtweet.info/reference/lat_lng.html
+  About 0.85% tweets are geo-tagged, which means that the latitude and longitude of a tweet is recorded. (Sloan and Morgan 2015). This location data is incredibly valuable for social scientist. It enables them to establish the geographic context in which the tweeter is located when the tweet. Of the 10000 tweets I collected, 319 contained a place type.
+  
+reference for lat_lng function: https://rtweet.info/reference/lat_lng.html
 adds a lat and long field to the data frame, picked out of the fields you indicate in the c() list
 sample function: lat_lng(x, coords = c("coords_coords", "bbox_coords"))
 
@@ -84,3 +86,6 @@ This chunk of code counts the number of unique place types in the dataset.
 count(winterTweets, place_type)
 ```
 [twitter data](./status_id.csv)
+
+Citations:
+Sloan L, Morgan J (2015) Who Tweets with Their Location? Understanding the Relationship between Demographic Characteristics and the Use of Geoservices and Geotagging on Twitter. PLoS ONE 10(11): e0142209. https://doi.org/10.1371/journal.pone.0142209
