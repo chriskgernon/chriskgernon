@@ -195,6 +195,78 @@ impeachWordPairs %>%
        x = "", y = "") +
   theme_void()
 ```
+![word cloud](.\word_cloud.png\)
+
+# Spatial Analysis
+
+In order to perform spatial analysis using R, it is helpful to get a Census API from this link: https://api.census.gov/data/key_signup.html
+
+I used this code to get my data from the US Census Bureau. Visit this [link](https://www.rdocumentation.org/packages/tidycensus/versions/0.9.2/topics/get_estimates) if you need help understanding what each input does.
+```R
+Counties <- get_estimates("county",product="population",output="wide",geometry=TRUE,keep_geo_vars=TRUE, key="********************")
+```
+
+
+This code only selects the states I am interested in based on their fips code. Visit this [link](https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code) if you want to include others states. 
+
+```R
+NorthEastCounties <- filter(Counties,STATEFP %in% c("11","42","24","10","34","51") )
+```
+
+This code plots the data onto a map. The ```cut_number()```is an equal interval classification function, while cut_numer is a quantile / equal count function.
+
+```R
+ggplot() +
+  geom_sf(data=NorthEastCounties, aes(fill=cut_number(POP,5)), color="grey")+
+  scale_fill_brewer(palette="GnBu")+
+  guides(fill=guide_legend(title="Population Density"))+
+  geom_point(data = winterTweetsGeo, aes(x=lng,y=lat),
+             colour = "#654321", alpha = .5) +
+  ggtitle("Tweet Locations About Donald Trump and or Impeachment") +
+  theme(plot.title=element_text(hjust=0.5),
+        axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        plot.background = element_rect(fill = "#f5f5f2", color = NA))+
+  theme_minimal()
+```
+
+# Upload results to PostGIS database
+Connecting to my PostGIS database allows me to visualize the data I collected in R in QGIS. I also added the counties into my database and transformed their names to lowercase. This is how I did it:
+
+```R
+con <- dbConnect(RPostgres::Postgres(), dbname='christopher', host='artemis', user='christopher', password='**************') 
+#list the database tables, to check if the database is working
+dbListTables(con)
+
+#create a simple table for uploading
+impeach <- select(impeachTweetsGeo,c("user_id","status_id","text","lat","lng"),starts_with("place"))
+
+#write data to the database
+#replace new_table_name with your new table name
+#replace dhshh with the data frame you want to upload to the database 
+dbWriteTable(con,'impeach', impeach, overwrite=TRUE)
+
+necounties <- lownames(NorthEastCounties)
+dbWriteTable(con,'necounties',necounties, overwrite=TRUE)
+```
+Once I uploaded my results into my PostGIS database, I used the DB Manager in QGIS to add a geometry column of type point and CRS NAD 1983 for the tweet locations. Also, I put the county data I collected in R into my database.
+
+```SQL
+SELECT AddGeometryColumn ('public','winter','geom',4269,'POINT',2, false);
+update winter set geom = st_transform(st_makepoint(lng,lat),4326,4269);
+
+select populate_geometry_columns('necounties'::regclass);
+```
+I also added the counties into my database and transformed their names to lowercase.
+```R
+
+```
+
+Finally, I disconnected from my database in R
+```R
+#disconnect from the database
+dbDisconnect(con)
+```
 
 [twitter data](./status_id.csv)
 
