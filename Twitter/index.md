@@ -65,7 +65,22 @@ ts_plot(winterTweets, by="hours", color= "#565656")+
   
   ## FIND ONLY PRECISE GEOGRAPHIES
   
-  
+ reference for lat_lng function: https://rtweet.info/reference/lat_lng.html
+adds a lat and long field to the data frame, picked out of the fields you indicate in the c() list
+sample function: lat_lng(x, coords = c("coords_coords", "bbox_coords"))
+
+This chunk of code counts the number of unique place types in the dataset.
+
+| Place Type| Count|
+| ------------- | ------------- |
+| admin|26|
+| city|271|
+|neighborhood|1|
+|poi|21|
+|NA|9681|
 ```
+# list and count unique place types
+# NA results included based on profile locations, not geotagging / geocoding. If you have these, it indicates that you exhausted the more precise tweets in your search parameters
+count(winterTweets, place_type)
 ```
-[file](./status_id.csv)
+[twitter data](./status_id.csv)
