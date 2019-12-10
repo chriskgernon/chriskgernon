@@ -153,7 +153,7 @@ count(winterWords)
 ```
 I created a bar graph that shows the 15 most frequent words found in the tweets I scraped. The code I used to create the graph appears after the picture.
 
-![unique words](./unique_words.png/)
+![unique words](./unique_words2.png/)
 
 ```R
 impeachWords %>%
@@ -179,19 +179,22 @@ winterWordPairs <- winterTweetsGeo %>% select(text) %>%
 winterWordPairs <- separate(winterWordPairs, paired_words, c("word1", "word2"),sep=" ")
 winterWordPairs <- winterWordPairs %>% count(word1, word2, sort=TRUE)
 
-#graph a word cloud with space indicating association. you may change the filter to filter more or less than pairs with 10 instances
-winterWordPairs %>%
-  filter(n >= 5) %>% # we changed this to 2, rather than 15
+### Word cloud
+
+The code below graphs a word cloud where space indicates association. Filtering ```n``` to more than or equal to 5 tells R to only consider words that are paired 5 or more times. 
+```R
+impeachWordPairs %>%
+  filter(n >= 5) %>% 
   graph_from_data_frame() %>%
   ggraph(layout = "fr") +
   # geom_edge_link(aes(edge_alpha = n, edge_width = n)) +
   geom_node_point(color = "darkslategray4", size = 3) +
   geom_node_text(aes(label = name), vjust = 1.8, size = 3) +
-  labs(title = "Word Network: Tweets during the 2013 Colorado Flood Event",
-       subtitle = "September 2013 - Text mining twitter data ",
+  labs(title = "Word Network: Tweets about Trump and Impeachment",
+       subtitle = "November 2019 - Text mining twitter data ",
        x = "", y = "") +
   theme_void()
-
+```
 
 [twitter data](./status_id.csv)
 
