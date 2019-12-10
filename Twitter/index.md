@@ -6,4 +6,4 @@ Twitter is
 
 ![counties2](countieseastgGetisOrdMapFrame2.png)
 
-![heat_map](heat_map.jpg)
+![heat_map](Heat_map.png)
