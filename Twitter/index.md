@@ -153,7 +153,7 @@ count(winterWords)
 ```
 I created a bar graph that shows the 15 most frequent words found in the tweets I scraped. The code I used to create the graph appears after the picture.
 
-![unique words](.\unique_words.png\)
+![unique words](./unique_words.png/)
 
 ```R
 impeachWords %>%
