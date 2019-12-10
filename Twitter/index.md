@@ -54,7 +54,7 @@ impeachTweets <- search_tweets("trump OR impeachment OR impeach OR trial OR hear
 
 I created a graph that shows the number of impeachment tweets over time.
 
-![temporal](.\over_time.png\)
+![temporal](./over_time.png/)
 
 
 The following code was what I used to create the graph. ```ts_data``` and ```ts_plot``` are two functions that are part of the ```rtweet``` library. ```ts_data``` returns data containing the frequency of tweets over a specified interval of time.. ```ts_plot``` creates a ggplot2 plot of the frequency of tweets over a specified interval of time.
