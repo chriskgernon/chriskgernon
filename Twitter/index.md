@@ -1,13 +1,5 @@
 Lab 10
 
-Twitter is
-
-![counties](countieseastgGetisOrdMapFrame.png)
-
-![counties2](countieseastgGetisOrdMapFrame2.png)
-
-![heat_map](Heat_map.png)
-
 # Method
 ## Collecting the Data
 First, I installed and downloaded all the necessary packages to perform the analysis. 
@@ -267,8 +259,12 @@ Finally, I disconnected from my database in R
 #disconnect from the database
 dbDisconnect(con)
 ```
+# Data
 
-[twitter data](./status_id.csv)
+This is the [R Script](./updatedtweetdata.R/) I used to perform the analysis
+
+Twitter does not allow for the public display of their data because of privacy concerns. They do, however, allow for the publishing of tweet status ID's. So this is all the [twitter data](./status_id.csv) I can provide from my project.
+
 
 Citations:
 Sloan L, Morgan J (2015) Who Tweets with Their Location? Understanding the Relationship between Demographic Characteristics and the Use of Geoservices and Geotagging on Twitter. PLoS ONE 10(11): e0142209. https://doi.org/10.1371/journal.pone.0142209
