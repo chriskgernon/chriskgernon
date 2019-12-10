@@ -53,16 +53,19 @@ impeachTweets <- search_tweets("trump OR impeachment OR impeach OR trial OR hear
 ## Temporal Analysis
 
 I created a graph that shows the number of impeachment tweets over time.
-```R
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+|```R
 #create temporal data frame & graph it
 winterTweetHours <- ts_data(winterTweets, by="hours")
 ts_plot(winterTweets, by="hours", color= "#565656")+
   labs(title = "Tweets about Impeachment on November 14, 2019 Over Time",
        x = "Time", y = "Count")+
   geom_point()+
-  theme_light()
-  ```
-  
+  theme_light()``` | ![temporal](.\over_time.png)|
+
+ 
   ## FIND ONLY PRECISE GEOGRAPHIES
   
   About 0.85% tweets are geo-tagged, which means that the latitude and longitude of a tweet is recorded. (Sloan and Morgan 2015). This location data is incredibly valuable for social scientist. It enables them to establish the geographic context in which the tweeter is located when the tweet. Of the 10000 tweets I collected, 319 contained a place type.
@@ -85,6 +88,8 @@ This chunk of code counts the number of unique place types in the dataset.
 # NA results included based on profile locations, not geotagging / geocoding. If you have these, it indicates that you exhausted the more precise tweets in your search parameters
 count(winterTweets, place_type)
 ```
+
+
 [twitter data](./status_id.csv)
 
 Citations:
