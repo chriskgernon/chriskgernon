@@ -111,6 +111,19 @@ where dorian_tweets + november_tweets >0;
 
 GeoDa is a free and open source software tool that serves as an introduction to spatial data analysis. It is designed to facilitate new insights from data analysis by exploring and modeling spatial patterns.
 
+First, I connected to my PostGIS database to load my counties table.
+![Database](./connecting.PNG/)
+
+Next, I created a spatial weights matrix.
+![matrix](./matrix.PNG/)
+
+After, I calculated the local G* statistic.
+![Gstar](./Gstar.PNG/)
+
+
+
+
+
 ## Heatmap (Kernal Density) Visualization of Tweets
 First, I put my county file from my database into QGIS. The Heatmap (Kernal Density) function in QGIS requires point geometry input. So I took the centroids of my county polygons.
 ![centroids](./centroids.PNG/)
