@@ -128,6 +128,7 @@ After, I calculated the local G* statistic.
 |![sig](./01sigsig.png/)|![sig](./01sigcluster.png/)|.01|
 |![sig](./001sigsig.png/)|![sig](./001sigcluster.png/)|.001|
 
+![sig](./saveas.PNG/)
 
 ## Heatmap (Kernal Density) Visualization of Tweets
 First, I put my county file from my database into QGIS. The Heatmap (Kernal Density) function in QGIS requires point geometry input. So I took the centroids of my county polygons.
