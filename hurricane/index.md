@@ -121,9 +121,9 @@ Next, I used the Heatmap (Kernal Density) function with the inputs (left) and go
 ![kernal](./kernal.PNG/)![output](./output.PNG/)
 
   | Place Type| Count|
-| ------------- | ------------- |
-|![kernal](./kernal.PNG/)|![output](./output.PNG/)|
 
+|![kernal](./kernal.PNG/)|![output](./output.PNG/)|
+| ------------- | ------------- |
 
 
 
