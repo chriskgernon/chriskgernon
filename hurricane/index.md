@@ -126,6 +126,8 @@ Next, I used the Heatmap (Kernal Density) function with the inputs (top) and got
 ![output](./output.PNG/)
 
   
+After changing the symbology and adding color, this was my final product:
+![heat map](./Heat_map.png/)
 
 
 
