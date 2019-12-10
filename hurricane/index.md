@@ -122,12 +122,8 @@ After, I calculated the local G* statistic.
 
 
   | Significance map| Cluster Map| Significance |
-| ------------- | ------------- |
-|![sig](./05sigsig.png/)|![sig](./05sigcluster.png/|
-| city|271|
-|neighborhood|1|
-|poi|21|
-|NA|9681|
+| ------------- | ------------- |------------- |
+|![sig](./05sigsig.png/)|![sig](./05sigcluster.png/)|.05|
 
 
 ## Heatmap (Kernal Density) Visualization of Tweets
