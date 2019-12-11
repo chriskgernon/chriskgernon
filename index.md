@@ -24,7 +24,8 @@ This link consists of my work done using SAGA.
 
 This link shows modeling I've done using QGIS. Here are some of my final products:
 
-| ![plots](./QGIS/polar_plot.PNG/)| ![plots](./QGIS/scatter_plot.PNG/)|
+|![plots](./QGIS/polar_plot.PNG/)| ![plots](./QGIS/scatter_plot.PNG/)|
+| ------------- | ------------- |
 
 
 
