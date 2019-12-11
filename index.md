@@ -24,7 +24,13 @@ This link consists of my work done using SAGA.
 
 This link shows modeling I've done using QGIS. Here are some of my final products:
 
-|
+  | ./QGIS/polar_plot.PNG/| ./QGIS/scatter_plot.PNG/|
+| ------------- | ------------- |
+| admin|26|
+| city|271|
+|neighborhood|1|
+|poi|21|
+|NA|9681|
 
 
 
