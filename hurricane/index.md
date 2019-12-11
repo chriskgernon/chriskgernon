@@ -149,7 +149,7 @@ After changing the symbology and adding color, this was my final product:
 ![heat map](./Heat_map.png/)
 
 # Conclusions
-![pic](./word_network.png)
+![pic](./word_network_hurricane.png)
 
 ![pic](./word_network_normal.png)
 
