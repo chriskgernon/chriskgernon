@@ -15,7 +15,10 @@ This is an analysis I did using data from the Tanzanian Resilience Academy. I wa
 
 [SAGA](./SAGA/Hydrology_model.md)
 
-This link consists of my work done using SAGA. 
+This link consists of my work done using SAGA. Here are some of my final products:
+
+|![plots](./SAGA/compare2.PNG/)| ![plots](./SAGA/compare1.PNG/)|
+| ------------- | ------------- |
 
 
 # Modeling Direction and Distance in QGIS
