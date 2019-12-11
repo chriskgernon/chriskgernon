@@ -11,6 +11,9 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 
 This is an analysis I did using data from the Tanzanian Resilience Academy. I was interested in finding the minumum average distance of waste sites to drain locations in order to determine which subwards are likely to experience blocked drains duing a flood. 
 
+|![plots](./Dar_Es_Salaam/leaflet.PNG)|
+| ------------- |
+
 
 # Using SAGA to model Hydrology and Error
 
