@@ -11,7 +11,7 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 # Multi-criteria Analysis of Hazard Vulnerability 
 
 
-|![plots](./vulnerability/TA2.png/)| ![plots](./vulnerability/fine_resolution_final_map.png/)|
+|![plots](./vulnerability/TA2.png/)|![plots](./vulnerability/fine_resolution_final_map.png/)|
 | ------------- | ------------- |
 
 
