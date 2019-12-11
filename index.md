@@ -7,6 +7,8 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 
 |![plots](./Twitter/Heat_map.png)|![plots](./Twitter/map.png)|
 | ------------- | ------------- |
+|![plots](./Twitter/over_time.png)|![plots](./Twitter/word_cloud.png)|
+| ------------- | ------------- |
 
 # Multi-criteria Analysis of Hazard Vulnerability 
 
