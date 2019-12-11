@@ -24,11 +24,19 @@ Model:
 
 This model takes two inputs. The first input can be a polygon or a point. It is supposed to be the CBD of an urban area. Users can input a polygon and, by using the centroids and mean coordinates functions, the model will find the centroid of the polygon. However, users cannot put in multiple polygons. Thus, if you have a whole metro area, you have to dissolve all of the tracts before putting the parameters through the model.
 
-SQL in model (distance):
+Field Calculator (distance):
 
-The SQL takes the centroid of the original polygon and transforms it to EPSG: 4326 so that we can caluclate the distance accurately. It then calculates the distance from the CBD to each centroid in each census tract.
+The field calculator takes the centroid of the original polygon and transforms it to EPSG: 4326 so that we can calculate the distance accurately. It then calculates the distance from the CBD to each centroid in each census tract.
 ```
-SELECT *, ST_distance(centroid(transform(geometry, 4326)), transform((SELECT geometry from input1), 4326), TRUE  ) as [%  concat( @fieldnameprefix, 'Dist')%] FROM input2
+
+distance(
+
+transform( centroid($geometry), layer_property(   @inputfeature2   , 'crs'), 'EPSG:4326') ,
+
+transform( make_point ( @Mean_coordinate_s__OUTPUT_maxx  ,  @Mean_coordinate_s__OUTPUT_maxy ), 
+layer_property(    @cbdselection     , 'crs'), 'EPSG:4326')
+ 
+ )
 ```
 
 Field Calculator Direction (degrees):
@@ -58,7 +66,7 @@ END
 ```
 The results from the direction calculator are divided into 4 sections and assigned cardinal directions. 
 
-![Model](Model.PNG)
+![Model](new_model.PNG)
 
 Here are two maps that show the results of my model using the entire states of KS from the test data below.
 
@@ -81,8 +89,10 @@ Here are two maps that show the results of the model using the Wichita metropoli
 
 [Model](./final_model.model3)
 
-[Test Data](./test_data.zip)
+[Wichita Test Data](./Data.gpkg)
 
-The test data includes a shp file with Ammerican Community Survey (ACS) data already joined to the Census Tract shp file. I include the tables to show where the data came from. Additionally, I include a shp file of the Wichita metropolitan area. 
+[Kansas Test Data](./Model_test_data.gpkg)
+
+The Wichita Test Data includes two shp files, the census tracts for the Wichita metro area with Median Gross Rent and the Latinx population joined and the centroid of the Wichita metro area. The Kansas Test Data includes two shp files with the proper data, the census tracts for all of Kansas and an arbitrary point in the Northeast of KS. All other files in the Kansas geopackage do not have useful data. 
 
 [back to Main Page](chriskgernon.github.io/index.md)
