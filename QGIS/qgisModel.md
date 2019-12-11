@@ -79,7 +79,7 @@ Here are two maps that show the results of the model using the Wichita metropoli
 ![Wichitadist](./distwchita.png)
 
 
-[Model](./Distance_from_point_final.model3)
+[Model](./final_model.model3)
 
 [Test Data](./test_data.zip)
 
