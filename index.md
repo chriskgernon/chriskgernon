@@ -5,8 +5,8 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 # Big Data/Twitter Analysis
 [twitter](./Twitter/index.md/)
 
-|![plots](./Twitter/Heat_map.png)|
-| ------------- |
+|![plots](./Twitter/Heat_map.png)||![plots](./Twitter/map.png)|
+| ------------- | ------------- |
 
 # Multi-criteria Analysis of Hazard Vulnerability 
 
@@ -30,7 +30,7 @@ This is an analysis I did using data from the Tanzanian Resilience Academy. I wa
 
 This link consists of my work done using SAGA. Here are some of my final products:
 
-|![plots](./SAGA/compare2.PNG/)| ![plots](./SAGA/Compare1.PNG/)|
+|![plots](./SAGA/compare2.PNG/)|![plots](./SAGA/Compare1.PNG/)|
 | ------------- | ------------- |
 |![plots](./SAGA/SRTM_hillshade_less_accurate.PNG/)| ![plots](./SAGA/SRTM_hillshade_less_accurate_indicator.PNG/)|
 
@@ -42,7 +42,7 @@ This link consists of my work done using SAGA. Here are some of my final product
 
 This link shows modeling I've done using QGIS. Here are some of my final products:
 
-|![plots](./QGIS/polar_plot.PNG/)| ![plots](./QGIS/scatter_plot.PNG/)|
+|![plots](./QGIS/polar_plot.PNG/)|![plots](./QGIS/scatter_plot.PNG/)|
 | ------------- | ------------- |
 
 
