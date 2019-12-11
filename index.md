@@ -19,4 +19,4 @@ This link consists of my work done using SAGA. I used a QGIS used to edit spatia
 
 This is an analysis I did using data from the Tanzanian Resilience Academy. I was interested in finding the minumum average distance of waste sites to drain locations in order to determine which subwards are likely to experience blocked drains duing a flood.  
 
-[twitter](./hurricane/index.md/)
+[twitter](./Twitter/index.md/)
