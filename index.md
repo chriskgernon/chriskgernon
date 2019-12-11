@@ -5,7 +5,7 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 # Big Data/Twitter Analysis
 [twitter](./Twitter/index.md/)
 
-|![plots](./Twitter/Heat_map.png)||![plots](./Twitter/map.png)|
+|![plots](./Twitter/Heat_map.png)|![plots](./Twitter/map.png)|
 | ------------- | ------------- |
 
 # Multi-criteria Analysis of Hazard Vulnerability 
