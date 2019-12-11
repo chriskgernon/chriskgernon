@@ -1,4 +1,5 @@
-Lab 10
+# Purpose
+The purpose of this lab was to query twitter data and produce five figures depicting my analyis of twitter data.
 
 # Method
 ## Collecting the Data
