@@ -222,7 +222,7 @@ ggplot() +
         plot.background = element_rect(fill = "#f5f5f2", color = NA))+
   theme_minimal()
 ```
-
+![map](./map.png/)
 # Upload results to PostGIS database
 Connecting to my PostGIS database allows me to visualize the data I collected in R in QGIS. I also added the counties into my database and transformed their names to lowercase. This is how I did it:
 
