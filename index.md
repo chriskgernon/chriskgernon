@@ -20,7 +20,7 @@ This link consists of my work done using SAGA. Here are some of my final product
 |![plots](./SAGA/compare2.PNG/)| ![plots](./SAGA/Compare1.PNG/)|
 | ------------- | ------------- |
 |![plots](./SAGA/SRTM_hillshade_less_accurate.PNG/)| ![plots](./SAGA/SRTM_hillshade_less_accurate_indicator.PNG/)|
-| ------------- | ------------- |
+
 
 
 # Modeling Direction and Distance in QGIS
