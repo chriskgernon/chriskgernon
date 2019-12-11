@@ -8,15 +8,14 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 | ------------- | ------------- |
 |![plots](./Twitter/word_cloud.png/)|![plots](./Twitter/map.png/)|
 
-# Multi-criteria Analysis of Hazard Vulnerability 
+# [Multi-criteria Analysis of Hazard Vulnerability](./vulnerability/index.md) 
 
 
 |![plots](./vulnerability/TA2.png/)|![plots](./vulnerability/fine_resolution_final_map.png/)|
 | ------------- | ------------- |
 
 
-# Analyzing Resilience in Dar Es Salaam using OSM
-[Leaflet](./Dar_Es_Salaam/index.md)
+# [Analyzing Resilience in Dar Es Salaam using OSM](./Dar_Es_Salaam/index.md)
 
 This is an analysis I did using data from the Tanzanian Resilience Academy. I was interested in finding the minumum average distance of waste sites to drain locations in order to determine which subwards are likely to experience blocked drains duing a flood. 
 
@@ -24,9 +23,7 @@ This is an analysis I did using data from the Tanzanian Resilience Academy. I wa
 | ------------- |
 
 
-# Using SAGA to model Hydrology and Error
-
-[SAGA](./SAGA/Hydrology_model.md)
+# [Using SAGA to model Hydrology and Error](./SAGA/Hydrology_model.md)
 
 This link consists of my work done using SAGA. Here are some of my final products:
 
@@ -36,9 +33,7 @@ This link consists of my work done using SAGA. Here are some of my final product
 
 
 
-# Modeling Direction and Distance in QGIS
-
-[QGIS](./QGIS/qgisModel.md)
+# [Modeling Direction and Distance in QGIS](./QGIS/qgisModel.md)
 
 This link shows modeling I've done using QGIS. Here are some of my final products:
 
