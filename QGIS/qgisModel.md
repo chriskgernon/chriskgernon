@@ -86,6 +86,10 @@ Here are two maps that show the results of the model using the Wichita metropoli
 
 ![Wichitadist](./distwchita.png)
 
+This [graph](./polar_plot_wich.html) shows the relationship between the direction from the Wichita metro area centroid and the median gross rent for each census tract in the metro area. 
+
+This [graph](./scatter_plot_wich.html) shows the relationship between the distance from the Wichita metro area centroid and the median gross rent for each census tract in the metro area. 
+
 
 [Model](./final_model.model3)
 
