@@ -147,14 +147,14 @@ Next, I used the Heatmap (Kernal Density) function with the inputs (top) and got
   
 After changing the symbology and adding color, this was my final product:
 ![heat map](./Heat_map.png/)
-
-# Conclusions
+# Text Analysis in R
 ![pic](./word_network_hurricane.png)
 
-![pic](./word_network_normal.png)
+![pic](./graph.png)
 
+# Conclusions
 
-The results of this lab show that sharpiegate had a small impact on tweets in november. 
+The results of this lab show that the storm had a major impact on the tweet rate of those populations in the path of the storm. However, Trump's sharpiegate did not have an impact on tweets about the storm. The cluster maps show that 
 
 
 
