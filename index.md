@@ -4,7 +4,7 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 
 # [Big Data/Twitter Analysis](./Twitter/index.md/)
 
-|![plots](./Twitter/Heat_map.png/)||![plots](./Twitter/unique_words2.png/)|
+|![plots](./Twitter/Heat_map.png/)|![plots](./Twitter/unique_words2.png/)|
 | ------------- | ------------- |
 |![plots](./Twitter/word_cloud.png/)|![plots](./Twitter/map.png/)|
 
