@@ -81,7 +81,7 @@ Here are two maps that show the results of the model using the Wichita metropoli
 
 [Model](./Distance_from_point_final.model3)
 
-[Test Data](./Model_test_data.gpkg)
+[Test Data](./test_data.zip)
 
 The test data includes a shp file with Ammerican Community Survey (ACS) data already joined to the Census Tract shp file. I include the tables to show where the data came from. Additionally, I include a shp file of the Wichita metropolitan area. 
 
