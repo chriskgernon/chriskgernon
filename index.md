@@ -1,10 +1,12 @@
 Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geography. This semester I am taking an Open Source GIS class. We will practice techniques that include data acquisition and preparation for analysis, spatial SQL database queries, automating analysis, spatial interpolation, testing sensitivity to error and uncertainty, and data visualization. We will read and apply critical research of GIS as a subject and with GIS as a methodology. I will be continually updating this Github page with the projects we do in the class. Hope you enjoy.
 
-[Blog Posts](./blogpost2/blogposts.md)
 
 
-
+# Big Data/Twitter Analysis
 [twitter](./Twitter/index.md/)
+
+|![plots](./Twitter/heat_map.png)|
+| ------------- |
 
 # Analyzing Resilience in Dar Es Salaam using OSM
 [Leaflet](./Dar_Es_Salaam/index.md)
@@ -39,5 +41,6 @@ This link shows modeling I've done using QGIS. Here are some of my final product
 
 
 
+[Blog Posts](./blogpost2/blogposts.md)
 
 
