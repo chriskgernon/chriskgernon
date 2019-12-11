@@ -17,7 +17,7 @@ This is an analysis I did using data from the Tanzanian Resilience Academy. I wa
 
 This link consists of my work done using SAGA. Here are some of my final products:
 
-|![plots](./SAGA/compare2.PNG/)| ![plots](./SAGA/compare1.PNG/)|
+|![plots](./SAGA/compare2.PNG/)| ![plots](./SAGA/Compare1.PNG/)|
 | ------------- | ------------- |
 
 
