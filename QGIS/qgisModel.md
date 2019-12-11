@@ -80,15 +80,15 @@ This [graph](./dir_plot.html) shows how the direction impacts the median rent ba
 
 This [graph](./dist_plot.html) shows how the distance from the point impacts the median rent based on Census Tracts in Kansas. The jump in Median Rent around 50k is the Kansas City Metropolitan area and the jump around 250k is the Wichita Metropolitan area. This shows that land closer to city is more valuable than land farther from city centers. Cities typically have more services and amenities than areas outside cities. People are willing to pay more to live closer to these amenities. 
 
-Here are two maps that show the results of the model using the Wichita metropolitcan area from the test data below. 
+Here are two maps that show the results of the model using the Wichita metropolitcan area from the test data below. Unlike the analysis above, this offers an understanding of urban geographic theory. 
 
 ![Wichitacard](./dirwichita.png)
 
 ![Wichitadist](./distwchita.png)
 
-This [graph](./polar_plot_wich.html) shows the relationship between the direction from the Wichita metro area centroid and the median gross rent for each census tract in the metro area. 
+This [graph](./polar_plot_wich.html) shows the relationship between the direction from the Wichita metro area centroid and the median gross rent for each census tract in the metro area. The polar plot shows there is not a significant relationship between direction from the centroid and median gross rent. 
 
-This [graph](./scatter_plot_wich.html) shows the relationship between the distance from the Wichita metro area centroid and the median gross rent for each census tract in the metro area. 
+This [graph](./scatter_plot_wich.html) shows the relationship between the distance from the Wichita metro area centroid and the median gross rent for each census tract in the metro area. The graph shows that Median Gross Rent is generally higher the closer you live to the Wichita metro area centroid. While the median gross rent is high in places near the centroid and low in places near the centroid, the median gross rent is significantly lower on average 0.3 km from the centroid.
 
 
 [Model](./final_model.model3)
