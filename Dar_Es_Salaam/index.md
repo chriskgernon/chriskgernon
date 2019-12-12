@@ -12,7 +12,11 @@ Given the circumstances in Dar Es Salaam, I was interested in answering the ques
 
 Using data from the Resilience Academy and Ramani Huria, I analyzed the minimum average distance between drains and waste sites in each subward in Dar Es Salaam in order to offer an indication for which subwards are most likely to have drain blockages during flooding. We assumed that the closer a drain was to a waste site, the more likely it is for it to be blocked during flooding. 
 
-I used OpenStreetMap data (from [this link](https://www.openstreetmap.org/#map=4/38.01/-95.84) collected through the Rumani Huria Project (from [this link](https://resilienceacademy.ac.tz/)) to analyze the spatial relationship between drains and waste sites in Dar es Salaam. PostGIS and the DB Manager of QGIS were used to find the average distance from drains to the nearest waste sites within a 50 m buffer by subward. Leaflet was used to visualize the output. The qgis2web plugin in QGIS allowed for the creation of the leaflet map.
+I used OpenStreetMap data (from [this link](https://www.openstreetmap.org/#map=4/38.01/-95.84) collected through the Rumani Huria Project (from [this link](https://resilienceacademy.ac.tz/)) to analyze the spatial relationship between drains and waste sites in Dar es Salaam.
+
+ I used command line tool called OSM2PGSQL to import the OSM data into our PostGIS server. Professor Holler set up the tool ready to be used for this lab. The dsm-osm.osm file was exported from OpenStreetMap. The dsm.style file instructs the tool (it tells it which features to load and which tags to use). The convertOSM.bat file performs the import function. The code locates the OSM2PGSQL tool, dsm_osm.osm file and the PostGIS server. After you run the code, run the batch file. 
+ 
+ PostGIS and the DB Manager of QGIS were used to find the average distance from drains to the nearest waste sites within a 50 m buffer by subward. Leaflet was used to visualize the output. The qgis2web plugin in QGIS allowed for the creation of the leaflet map.
 
 This is the batch script I used to parse through OpenStreetMap files and load into a PostGIS database.
 [Batch Script](./convertOSM.bat/)
