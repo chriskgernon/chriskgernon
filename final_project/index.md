@@ -44,8 +44,13 @@ Then, I clicked the styles tab and selected new styles. I selected the monochrom
 Finally, I uploaded my data into a new layer. I did this by first clicking on the ``+`` sign in the left corner. Then, I toggled over to the ```select data``` tab on the panel that popped out. I then selected the tileset I uploaded and chose to visualize it as a circle.
 
 ![pic](./add_data.PNG/)
+# Conclusions from Data
 # Discussion
 
 The purpose of this class was to learn about open-source software and the ethics of transparency, accessability, and reproducibility. Mapbox presents an interesting case when it comes to open-source. It started as an open-source project, and it is responsible for a lot of the up-keep and comprehensiveness of Open Street Maps. Additionally, they are significant contributors to Mapbox GL-JS JavaScript library and Leaflet JavaScript library. However, recently they now require payment in order to access all of their features, particularly in Mapbox Studio. Every service they offer is free for those who do not require a high volume of monthly requests. Depending on what resource you want to use, you are required to pay a couple of dollars if you need more than 50,000, 100,0000, or 750,000 requests per month, depending on the product. Additionally, they offer both paid and free support for Mapbox projects. Here is a the listing of their prices.
 
 ![pic](./support_plans.png/)
+
+
+Thus, Mapbox is accessible for low-volume users. Granted, they only ask for a couple dollars for a 10 fold increase in requests. However, it does create a grey area and begs the question, at what point does something no longer become open-source? The organization used to be completely open-source and free. As the company continues to grow, will they slowly become less and less open-source? Or are they determined to stick to their founding philosophy and just require money for high volume requests so the workers receive compensation for their work? I have a feeling this question will be answered in the coming years. 
+
