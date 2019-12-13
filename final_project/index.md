@@ -23,4 +23,12 @@ Third, I used a (CSV to GEOGJON converter website)[http://www.convertcsv.com/csv
 Fourth, uploading my data took several steps. I made a [Mapbox](https://www.mapbox.com/) account, and I used Mapbox studio to upload my data and style my basemap and symbols. In order to do this I first uploaded my data as a tileset in Mapbox Studio by clicking on tilesets and uploading the file from my computer.
 
 ![pic](./tileset.PNG/)
-Next, I converted my dataset into a tileset. Then, I selected the monochrome style. Finally, I uploaded my data into the style.    
+
+Next, I converted my dataset into a tileset. Then, I selected the monochrome style. Finally, I uploaded my data into the style.  
+
+
+# Discussion
+
+The purpose of this class was to learn about open-source software and the ethics of transparency, accessability, and reproducibility. Mapbox presents an interesting case when it comes to open-source. It started as an open-source project, and it is responsible for a lot of the up-keep and comprehensiveness of Open Street Maps. Additionally, they are significant contributors to Mapbox GL-JS JavaScript library and Leaflet JavaScript library. However, recently they now require payment in order to access all of their features, particularly in Mapbox Studio. Every service they offer is free for those who do not require a high volume of monthly requests. Depending on what resource you want to use, you are required to pay a couple of dollars if you need more than 50,000, 100,0000, or 750,000 requests per month, depending on the product. Additionally, they offer both paid and free support for Mapbox projects. Here is a the listing of their prices.
+
+!
