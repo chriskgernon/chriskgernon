@@ -44,6 +44,10 @@ Then, I clicked the styles tab and selected new styles. I selected the monochrom
 Finally, I uploaded my data into a new layer. I did this by first clicking on the ``+`` sign in the left corner. Then, I toggled over to the ```select data``` tab on the panel that popped out. I then selected the tileset I uploaded and chose to visualize it as a circle.
 
 ![pic](./add_data.PNG/)
+
+# Issues and Future Research
+
+Learning how to use Mapbox was a great experience. They provide great web tutorials and help documentation. However, I had a couple 
 # Conclusions from Data
 # Discussion
 
