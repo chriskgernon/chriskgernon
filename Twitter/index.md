@@ -262,7 +262,9 @@ dbDisconnect(con)
 ```
 # Data
 
-This is the [R Script](./updatedtweetdata.R/) I used to perform the analysis
+This is the [R Script](./updatedtweetdata.R/) I used to perform the analysis.
+
+This is the SQL I used: [SQL](./lab9.sql/)
 
 Twitter does not allow for the public display of their data because of privacy concerns. They do, however, allow for the publishing of tweet status ID's. So this is all the [twitter data](./status_id.csv) I can provide from my project.
 
