@@ -68,7 +68,9 @@ Now my dataset was only 60 rows-- much more  manageable. Now I could geocode all
 I followed the same workflow as method 1 starting at the second point from here on out.
 
  
-# Conclusions from Data
+# Final Product
+
+[Opioid Map](./opioid_test2.html)
 # Discussion
 
 The purpose of this class was to learn about open-source software and the ethics of transparency, accessability, and reproducibility. Mapbox presents an interesting case when it comes to open-source. It started as an open-source project, and it is responsible for a lot of the up-keep and comprehensiveness of Open Street Maps. Additionally, they are significant contributors to Mapbox GL-JS JavaScript library and Leaflet JavaScript library. However, recently they now require payment in order to access all of their features, particularly in Mapbox Studio. Every service they offer is free for those who do not require a high volume of monthly requests. Depending on what resource you want to use, you are required to pay a couple of dollars if you need more than 50,000, 100,0000, or 750,000 requests per month, depending on the product. Additionally, they offer both paid and free support for Mapbox projects. Here is a the listing of their prices.
