@@ -13,13 +13,13 @@ The purpose of my final project was to learn something new. I am interested in d
   * http://www.convertcsv.com/csv-to-geojson.htm
   
 # What I learned
-	* Mapbox
-	* Javascript
-		* How to visualize clusters
-		* How to make pop-ups
-	* geogjson files
-	* HTML
-	* Analyzing large data
+* Mapbox
+* Javascript
+	* How to visualize clusters
+	* How to make pop-ups
+* Working with geogjson files
+* Working with HTML
+* Analyzing large data
 # Methods
 
 My approach took two methods. The first method I did not thinking through the problem very logically. 
