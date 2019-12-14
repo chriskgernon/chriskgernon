@@ -154,7 +154,9 @@ After changing the symbology and adding color, this was my final product:
 
 # Conclusions
 
-The results of this lab show that the storm had a major impact on the tweet rate of those populations in the path of the storm. However, Trump's sharpiegate did not have an impact on tweets about the storm. The cluster maps show that 
+The results of this lab show that the storm had a major impact on the tweet rate of those populations in the path of the storm. However, Trump's sharpiegate did not have an impact on tweets about the storm. 
+
+Here is the SQL file I used for this lab: [SQL](./lab9.sql/)
 
 
 
