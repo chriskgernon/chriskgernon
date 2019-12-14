@@ -1,0 +1,873 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7256162,39.0504264 ]
+    },
+    "properties": {
+    "buyer_address1":"1001 SW GAGE BLVD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1001 SW GAGE BLVD Topeka KS ",
+    "sum":15237
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6826944,39.0473226 ]
+    },
+    "properties": {
+    "buyer_address1":"1001 SW TOPEKA BLVD.",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1001 SW TOPEKA BLVD. Topeka KS ",
+    "sum":25020
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7421749,39.06723 ]
+    },
+    "properties": {
+    "buyer_address1":"109 MEADOW LANE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"109 MEADOW LANE Topeka KS ",
+    "sum":55
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.726326,39.0486383 ]
+    },
+    "properties": {
+    "buyer_address1":"1125 SW GAGE, SUITE A",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1125 SW GAGE, SUITE A Topeka KS ",
+    "sum":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.672214,39.0510383 ]
+    },
+    "properties": {
+    "buyer_address1":"121 SE 6TH AVENUE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"121 SE 6TH AVENUE Topeka KS ",
+    "sum":5127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.661119,39.019104 ]
+    },
+    "properties": {
+    "buyer_address1":"1244 EAST 27TH ST",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1244 EAST 27TH ST Topeka KS ",
+    "sum":2192
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6937933,38.9994451 ]
+    },
+    "properties": {
+    "buyer_address1":"1301 SW 37TH STREET",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1301 SW 37TH STREET Topeka KS ",
+    "sum":13761
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6915323,39.0561036 ]
+    },
+    "properties": {
+    "buyer_address1":"1315 SW 6TH AVENUE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1315 SW 6TH AVENUE Topeka KS ",
+    "sum":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.8157245,38.9068945 ]
+    },
+    "properties": {
+    "buyer_address1":"140 E 9TH",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"140 E 9TH Topeka KS ",
+    "sum":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6961778,39.0447174 ]
+    },
+    "properties": {
+    "buyer_address1":"1400 HUNTOON",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1400 HUNTOON Topeka KS ",
+    "sum":6575
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7645465,39.0417668 ]
+    },
+    "properties": {
+    "buyer_address1":"1401 SW WANAMAKER ROAD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1401 SW WANAMAKER ROAD Topeka KS ",
+    "sum":7209
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6964703,39.0526033 ]
+    },
+    "properties": {
+    "buyer_address1":"1500 SW 10TH AVE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1500 SW 10TH AVE Topeka KS ",
+    "sum":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7645465,39.0398188 ]
+    },
+    "properties": {
+    "buyer_address1":"1501 SW WANAMAKER",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1501 SW WANAMAKER Topeka KS ",
+    "sum":12959
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7586197,39.0349164 ]
+    },
+    "properties": {
+    "buyer_address1":"1740 SW WANAMAKER ROAD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1740 SW WANAMAKER ROAD Topeka KS ",
+    "sum":2576
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6499374,39.016647 ]
+    },
+    "properties": {
+    "buyer_address1":"2010 S.E. 29TH ST",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2010 S.E. 29TH ST Topeka KS ",
+    "sum":11655
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7560681,39.0309023 ]
+    },
+    "properties": {
+    "buyer_address1":"2020 SW WESTPORT DRIVE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2020 SW WESTPORT DRIVE Topeka KS ",
+    "sum":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7816304,39.0295984 ]
+    },
+    "properties": {
+    "buyer_address1":"2025 SW URISH RD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2025 SW URISH RD Topeka KS ",
+    "sum":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6654969,39.0880693 ]
+    },
+    "properties": {
+    "buyer_address1":"2101 NW TOPEKA BLVD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2101 NW TOPEKA BLVD Topeka KS ",
+    "sum":14083
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7443815,39.0282307 ]
+    },
+    "properties": {
+    "buyer_address1":"2121 SW FAIRLAWN ROAD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2121 SW FAIRLAWN ROAD Topeka KS ",
+    "sum":9887
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7567678,39.0266057 ]
+    },
+    "properties": {
+    "buyer_address1":"2201 SW WESTPORT DR",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2201 SW WESTPORT DR Topeka KS ",
+    "sum":300
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6712687,39.0883671 ]
+    },
+    "properties": {
+    "buyer_address1":"2210 N. TYLER",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2210 N. TYLER Topeka KS ",
+    "sum":419
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6712687,39.0896649 ]
+    },
+    "properties": {
+    "buyer_address1":"2240 N TYLER STREET",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2240 N TYLER STREET Topeka KS ",
+    "sum":7160
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7053348,39.05167 ]
+    },
+    "properties": {
+    "buyer_address1":"2252 SW 10TH AVE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2252 SW 10TH AVE Topeka KS ",
+    "sum":7011
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7067265,39.0155003 ]
+    },
+    "properties": {
+    "buyer_address1":"2300 WEST 29TH ST",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2300 WEST 29TH ST Topeka KS ",
+    "sum":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7629413,39.0216734 ]
+    },
+    "properties": {
+    "buyer_address1":"2445 SW WANMAKER ROAD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2445 SW WANMAKER ROAD Topeka KS ",
+    "sum":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6717619,39.0936964 ]
+    },
+    "properties": {
+    "buyer_address1":"2600 NW ROCHESTER ROAD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2600 NW ROCHESTER ROAD Topeka KS ",
+    "sum":11141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7105485,39.0367301 ]
+    },
+    "properties": {
+    "buyer_address1":"2619 S.W. 17TH",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2619 S.W. 17TH Topeka KS ",
+    "sum":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7137736,39.0145243 ]
+    },
+    "properties": {
+    "buyer_address1":"2815 W 29TH ST",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2815 W 29TH ST Topeka KS ",
+    "sum":12677
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7643819,39.0153097 ]
+    },
+    "properties": {
+    "buyer_address1":"2835 SW WANAMAKER RD.",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2835 SW WANAMAKER RD. Topeka KS ",
+    "sum":5126
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7786661,39.0150501 ]
+    },
+    "properties": {
+    "buyer_address1":"2860 SW MISSION WOODS DRIVE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2860 SW MISSION WOODS DRIVE Topeka KS ",
+    "sum":1145
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.65245,39.0146922 ]
+    },
+    "properties": {
+    "buyer_address1":"2901 SE CALIFORNIA AVE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2901 SE CALIFORNIA AVE Topeka KS ",
+    "sum":10204
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7637233,39.0120942 ]
+    },
+    "properties": {
+    "buyer_address1":"2951 SW WANAMAKER RD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2951 SW WANAMAKER RD Topeka KS ",
+    "sum":1953
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6840779,39.0156735 ]
+    },
+    "properties": {
+    "buyer_address1":"300 S.W. 29TH",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"300 S.W. 29TH Topeka KS ",
+    "sum":1711
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7147637,39.0626369 ]
+    },
+    "properties": {
+    "buyer_address1":"330 SW OAKLEY AVENUE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"330 SW OAKLEY AVENUE Topeka KS ",
+    "sum":440
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7126252,39.1297304 ]
+    },
+    "properties": {
+    "buyer_address1":"3405 NW HUNTERS RIDGE TERRACE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"3405 NW HUNTERS RIDGE TERRACE Topeka KS ",
+    "sum":1265
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7615007,39.0005909 ]
+    },
+    "properties": {
+    "buyer_address1":"3630 SW WANAMAKER RD.",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"3630 SW WANAMAKER RD. Topeka KS ",
+    "sum":4627
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6869693,39.0014833 ]
+    },
+    "properties": {
+    "buyer_address1":"3696 SW TOPEKA BLVD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"3696 SW TOPEKA BLVD Topeka KS ",
+    "sum":9931
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.706617,38.999817 ]
+    },
+    "properties": {
+    "buyer_address1":"3715 SW BURLINGAME RD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"3715 SW BURLINGAME RD Topeka KS ",
+    "sum":43
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.726609,39.0154635 ]
+    },
+    "properties": {
+    "buyer_address1":"3900 SW 29TH ST",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"3900 SW 29TH ST Topeka KS ",
+    "sum":11031
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7270409,39.0496799 ]
+    },
+    "properties": {
+    "buyer_address1":"4033 SW 10TH STREET",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"4033 SW 10TH STREET Topeka KS ",
+    "sum":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6007292,38.9866768 ]
+    },
+    "properties": {
+    "buyer_address1":"4144 S E 45TH ST",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"4144 S E 45TH ST Topeka KS ",
+    "sum":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.9519734,39.1376775 ]
+    },
+    "properties": {
+    "buyer_address1":"430 MAIN STREET",
+    "city":"Rossville",
+    "state":"KS",
+    "Full Address":"430 MAIN STREET Rossville KS ",
+    "sum":1557
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7447805,39.0266487 ]
+    },
+    "properties": {
+    "buyer_address1":"5311 SW 22ND PLACE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"5311 SW 22ND PLACE Topeka KS ",
+    "sum":5640
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7481465,39.0138569 ]
+    },
+    "properties": {
+    "buyer_address1":"5501 SW 29TH ST",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"5501 SW 29TH ST Topeka KS ",
+    "sum":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7512354,39.0154132 ]
+    },
+    "properties": {
+    "buyer_address1":"5638 SW 29TH STREET",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"5638 SW 29TH STREET Topeka KS ",
+    "sum":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7518407,39.0302122 ]
+    },
+    "properties": {
+    "buyer_address1":"5720 WEST 21ST",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"5720 WEST 21ST Topeka KS ",
+    "sum":4154
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7548747,39.0439891 ]
+    },
+    "properties": {
+    "buyer_address1":"5830 SW HUNTOON",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"5830 SW HUNTOON Topeka KS ",
+    "sum":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7627569,39.0563049 ]
+    },
+    "properties": {
+    "buyer_address1":"6001 SW 6TH SUITE 210",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"6001 SW 6TH SUITE 210 Topeka KS ",
+    "sum":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7669338,39.0571495 ]
+    },
+    "properties": {
+    "buyer_address1":"601 SW CORPORATE VIEW",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"601 SW CORPORATE VIEW Topeka KS ",
+    "sum":817
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6518052,39.0911426 ]
+    },
+    "properties": {
+    "buyer_address1":"625 W HIGHWAY 24",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"625 W HIGHWAY 24 Topeka KS ",
+    "sum":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6954455,39.0562087 ]
+    },
+    "properties": {
+    "buyer_address1":"631 HORNE",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"631 HORNE Topeka KS ",
+    "sum":174
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7825609,39.013648 ]
+    },
+    "properties": {
+    "buyer_address1":"6829 S.W. 29TH",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"6829 S.W. 29TH Topeka KS ",
+    "sum":7732
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.782345,39.184072 ]
+    },
+    "properties": {
+    "buyer_address1":"7046 NW 74TH STREET",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"7046 NW 74TH STREET Topeka KS ",
+    "sum":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6742986,39.0932328 ]
+    },
+    "properties": {
+    "buyer_address1":"800 NW 25TH STREET",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"800 NW 25TH STREET Topeka KS ",
+    "sum":11442
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6845441,39.0543341 ]
+    },
+    "properties": {
+    "buyer_address1":"821 SW 6TH ST",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"821 SW 6TH ST Topeka KS ",
+    "sum":5235
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6710427,39.0685223 ]
+    },
+    "properties": {
+    "buyer_address1":"837 NW HARRISON",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"837 NW HARRISON Topeka KS ",
+    "sum":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.698114,39.0529047 ]
+    },
+    "properties": {
+    "buyer_address1":"901 S.W. GARFIELD",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"901 S.W. GARFIELD Topeka KS ",
+    "sum":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7048212,39.0588306 ]
+    },
+    "properties": {
+    "buyer_address1":"2408 SW 6th Ave",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2408 SW 6th Ave Topeka KS ",
+    "sum":37
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6517516,39.0301946 ]
+    },
+    "properties": {
+    "buyer_address1":"2061 SE California Ave",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"2061 SE California Ave Topeka KS ",
+    "sum":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7261566,39.0458885 ]
+    },
+    "properties": {
+    "buyer_address1":"4000 SW 12th St",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"4000 SW 12th St Topeka KS ",
+    "sum":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6593112,39.1303431 ]
+    },
+    "properties": {
+    "buyer_address1":"140 NE 46th St",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"140 NE 46th St Topeka KS ",
+    "sum":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.7426945,39.0505136 ]
+    },
+    "properties": {
+    "buyer_address1":"1010 SW Fairlawn Rd",
+    "city":"Topeka",
+    "state":"KS",
+    "Full Address":"1010 SW Fairlawn Rd Topeka KS ",
+    "sum":1
+    }
+  }
+]
+}
