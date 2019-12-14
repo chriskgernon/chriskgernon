@@ -67,10 +67,194 @@ Now my dataset was only 60 rows-- much more  manageable. Now I could geocode all
 
 I followed the same workflow as method 1 starting at the second point from here on out.
 
+The following is my html file. Instead of explaining it chunk by chunk, I explain everything with comments in the code.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Points on a map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='map'></div>
+    <script>
+	//This is where you put the accessToken that Mapbox makes for you
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2dlcm5vbiIsImEiOiJjazNxcnB3MXYwNHRiM2RsZGl4cWc2bTE3In0.z5PVJ_JdlcwAfNEUUwSaxA'; // replace this with your access token
+    var map = new mapboxgl.Map({
+      container: 'map',
+	  //This is where you put the style code that you created in Mapbox. It contains all the information for you basemap
+      style: 'mapbox://styles/cgernon/ck437z8l00u0l1cpb6rx02jd9', // replace this with your style URL
+      center: [-95.697003, 39.030446],
+      zoom: 11
+    });
+	//This chunk of code loads the shawnee county polygon layer
+map.on('load', function() {
+map.addLayer({
+'id': 'shawnee_county',
+'type': 'fill',
+'source': {
+'type': 'geojson',
+'data': './shawnee_county.geojson'
+},
+'layout': {},
+'paint': {
+'fill-color': '#088',
+'fill-opacity': 0.1,
+'fill-antialias' : true,
+'fill-outline-color': '#000000'
+}})
+});
+
+// This is the code that inserts the popup function
+map.on('click', function(e) {
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['location'] // replace this with the name of the layer
+  });
+
+  if (!features.length) {
+    return;
+  }
+
+  var feature = features[0];
+  feature.properties.ID
+
+  var popup = new mapboxgl.Popup({ offset: [0, -15] })
+    .setLngLat(feature.geometry.coordinates)
+    .setHTML('<h3>' + 'Total number of opiods dispensed at this location: ' + feature.properties.sum + '</h3><p>') //+ feature.properties.QUANTITY + '</p>')
+    .addTo(map);
+});
+//This is the chunk of code that creates the clusters you see right when you load the page
+map.on('load', function() {
+// Add a new source from our GeoJSON data and set the
+// 'cluster' option to true. GL-JS will add the point_count property to your source data.
+map.addSource('geometry', {
+type: 'geojson',
+// Point to GeoJSON data. This code visualizes every dispense of opiod in Shawnee County
+data:
+'./distributors.geojson',
+cluster: true,
+clusterMaxZoom: 11, // Max zoom to cluster points on
+clusterRadius: 20 // Radius of each cluster when clustering points (defaults to 50)
+});
+
+map.addLayer({
+id: 'clusters',
+type: 'circle',
+source: 'geometry',
+filter: ['has', 'point_count'],
+paint: {
+// Use step expressions (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
+// with three steps to implement three types of circles:
+//   * Blue, 20px circles when point count is less than 100
+//   * Yellow, 30px circles when point count is between 100 and 750
+//   * Pink, 40px circles when point count is greater than or equal to 750
+'circle-color': [
+'step',
+['get', 'point_count'],
+'#51bbd6',
+100,
+'#f1f075',
+750,
+'#f28cb1'
+],
+'circle-radius': [
+'step',
+['get', 'point_count'],
+20,
+100,
+30,
+750,
+40
+]
+}
+});
+ 
+map.addLayer({
+id: 'cluster-count',
+type: 'symbol',
+source: 'geometry',
+filter: ['has', 'point_count'],
+layout: {
+'text-field': '{point_count_abbreviated}',
+'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+'text-size': 12
+}
+});
+ 
+
+ 
+// inspect a cluster on click
+map.on('click', 'clusters', function(e) {
+var features = map.queryRenderedFeatures(e.point, {
+layers: ['clusters']
+});
+var clusterId = features[0].properties.cluster_id;
+map.getSource('geometry').getClusterExpansionZoom(
+clusterId,
+function(err, zoom) {
+if (err) return;
+ 
+map.easeTo({
+center: features[0].geometry.coordinates,
+zoom: zoom
+});
+}
+);
+});
+ 
+map.on('mouseenter', 'clusters', function() {
+map.getCanvas().style.cursor = 'pointer';
+});
+map.on('mouseleave', 'clusters', function() {
+map.getCanvas().style.cursor = '';
+});
+});
+
+    </script>
+  </body>
+
+</html>
+```
  
 # Final Product
 
+### How to visualize my product
+ * Create a new folder to store the files
+ * download the [html](./opiod_test2.html)
+ * download the [geojson](./shawnee_county.geojson/) file for Shawnee County
+ * download the [geojson](./opioid_test2.geojson/) file for the number of dispenses by distributors
+ * open the HTML file in firefox
+ * Why do I not need to download the sum.geojson file for the popups?
+       That information is stored in the tileset that I uploaded to Mapbox. Therefore, I can call that data in my html without having it stored on my actual computer
 [Opioid Map](./opiod_test2.html)
+
+### Legend for map:
+
+Each black point represents the location of a opioid distributor.
+The size of the heat symbol represents the number of dispenses by the distributor.
+The clusters represent the number of dispenses at the location.
+
+### Future improvements
+
+I would add a real legend to the map. Additionally, there was some issues visualizing my clusters based on the type of internet browser used. Firefox proved to be the least bugger. The cluster visualizations did not appear on chrome or edge.
+
 # Discussion
 
 The purpose of this class was to learn about open-source software and the ethics of transparency, accessability, and reproducibility. Mapbox presents an interesting case when it comes to open-source. It started as an open-source project, and it is responsible for a lot of the up-keep and comprehensiveness of Open Street Maps. Additionally, they are significant contributors to Mapbox GL-JS JavaScript library and Leaflet JavaScript library. However, recently they now require payment in order to access all of their features, particularly in Mapbox Studio. Every service they offer is free for those who do not require a high volume of monthly requests. Depending on what resource you want to use, you are required to pay a couple of dollars if you need more than 50,000, 100,0000, or 750,000 requests per month, depending on the product. Additionally, they offer both paid and free support for Mapbox projects. Here is a the listing of their prices.
