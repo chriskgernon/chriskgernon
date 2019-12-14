@@ -8,8 +8,18 @@ The purpose of my final project was to learn something new. I am interested in d
   * https://docs.mapbox.com/help/tutorials/add-points-pt-2/
   * https://docs.mapbox.com/help/tutorials/add-points-pt-1/
   * QGIS to convert shp file to GEOJSON
+  * DB Manager in QGIS to run SQL
+  * Excel to clean data
   * http://www.convertcsv.com/csv-to-geojson.htm
   
+# What I learned
+	* Mapbox
+	* Javascript
+		* How to visualize clusters
+		* How to make pop-ups
+	* geogjson files
+	* HTML
+	* Analyzing large data
 # Methods
 
 My approach took two methods. The first method I did not thinking through the problem very logically. 
@@ -243,6 +253,7 @@ map.getCanvas().style.cursor = '';
  * open the HTML file in firefox
  * Why do I not need to download the sum.geojson file for the popups?
        That information is stored in the tileset that I uploaded to Mapbox. Therefore, I can call that data in my html without having it stored on my actual computer
+       
 [Opioid Map](./opiod_test2.html)
 
 ### Legend for map:
@@ -253,7 +264,7 @@ The clusters represent the number of dispenses at the location.
 
 ### Future improvements
 
-I would add a real legend to the map. Additionally, there was some issues visualizing my clusters based on the type of internet browser used. Firefox proved to be the least bugger. The cluster visualizations did not appear on chrome or edge.
+I would add a real legend to the map. Additionally, there was some issues visualizing my clusters based on the type of internet browser used. Firefox proved to be the least bugger. The cluster visualizations did not appear on chrome or edge. Also, I would visualize the location of each distributor based on the total number of pills they dispensed.
 
 # Discussion
 
