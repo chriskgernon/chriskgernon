@@ -243,9 +243,9 @@ map.getCanvas().style.cursor = '';
 </html>
 ```
  
-# Final Product
+# [Final Product](./opiod_test2.html)
 
-### How to visualize my product
+### How to change and alter my visualizations with your own ideas
  * Create a new folder to store the files
  * download the [html](./opiod_test2.html)
  * download the [geojson](./shawnee_county.geojson/) file for Shawnee County
@@ -258,9 +258,9 @@ map.getCanvas().style.cursor = '';
 
 ### Legend for map:
 
-Each black point represents the location of a opioid distributor.
+Each black point represents the location of an opioid distributor.
 The size of the heat symbol represents the number of dispenses by the distributor.
-The clusters represent the number of dispenses at the location.
+The clusters represent the number of dispenses at the location-- similar to the heat symbol.
 
 ### Future improvements
 
