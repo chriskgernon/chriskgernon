@@ -4,14 +4,14 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 
 # [Big Data/Twitter Analysis](./big_data.md/)
 
-|![plots](./Twitter/Heat_map.png/)|![plots](./Twitter/unique_words2.png/)|
+|![plots](./Twitter/Heat_map.png/) | ![plots](./Twitter/unique_words2.png/) |
 | ------------- | ------------- |
-|![plots](./Twitter/word_cloud.png/)|![plots](./Twitter/map.png/)|
+| ![plots](./Twitter/word_cloud.png/) | ![plots](./Twitter/map.png/) |
 
 # [Multi-criteria Analysis of Hazard Vulnerability](./vulnerability/index.md) 
 
 
-|![plots](./vulnerability/TA2.png/)|![plots](./vulnerability/fine_resolution_final_map.png/)|
+| ![plots](./vulnerability/TA2.png/) | ![plots](./vulnerability/fine_resolution_final_map.png/) |
 | ------------- | ------------- |
 
 
@@ -19,7 +19,7 @@ Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geog
 
 This is an analysis I did using data from the Tanzanian Resilience Academy. I was interested in finding the minumum average distance of waste sites to drain locations in order to determine which subwards are likely to experience blocked drains duing a flood. 
 
-|![plots](./Dar_Es_Salaam/leaflet.PNG)|
+| ![plots](./Dar_Es_Salaam/leaflet.PNG) |
 | ------------- |
 
 
