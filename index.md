@@ -1,4 +1,7 @@
 Hello! My name is Chris Gernon. I'm a junior at Middlebury College studying Geography. This semester I am taking an Open Source GIS class. We will practice techniques that include data acquisition and preparation for analysis, spatial SQL database queries, automating analysis, spatial interpolation, testing sensitivity to error and uncertainty, and data visualization. We will read and apply critical research of GIS as a subject and with GIS as a methodology. Here are some of my blog [posts](./blogpost2/blogposts.md) from the semester. I will be continually updating this Github page with the projects we do in the class. Click on any of the titles to see what I've done throughout the semester. Hope you enjoy.
+
+ [CD 4](./Bray_Campaign/CD_4/CD_4_leaflet/index.md)
+ 
 # [Final Project: Mapbox](./final_project/index.md)
 
 
