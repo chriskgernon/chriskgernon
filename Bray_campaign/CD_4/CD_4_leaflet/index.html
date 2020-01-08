@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="data/CD_41copy_1.js"></script>
+        <script>
+        var highlightLayer;
+        function highlightFeature(e) {
+            highlightLayer = e.target;
+            highlightLayer.openPopup();
+        }
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:13, minZoom:4
+        }).fitBounds([[38.99360005226174,-105.94286056746151],[39.70705718646056,-104.52556887019321]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        var layer_OSMStandard_0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            opacity: 1.0,
+            attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
+            minZoom: 4,
+            maxZoom: 13,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_OSMStandard_0;
+        map.addLayer(layer_OSMStandard_0);
+        function pop_CD_41copy_1(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if (typeof layer.closePopup == 'function') {
+                        layer.closePopup();
+                    } else {
+                        layer.eachLayer(function(feature){
+                            feature.closePopup()
+                        });
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>COUNTYFP</strong><br />' + (feature.properties['COUNTYFP'] !== null ? Autolinker.link(feature.properties['COUNTYFP'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>VTDST</strong><br />' + (feature.properties['VTDST'] !== null ? Autolinker.link(feature.properties['VTDST'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>CD116FP</strong><br />' + (feature.properties['CD116FP'] !== null ? Autolinker.link(feature.properties['CD116FP'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>REG18D</strong><br />' + (feature.properties['REG18D'] !== null ? Autolinker.link(feature.properties['REG18D'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>VAP</strong><br />' + (feature.properties['VAP'] !== null ? Autolinker.link(feature.properties['VAP'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['2MOREVAP'] !== null ? Autolinker.link(feature.properties['2MOREVAP'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['wheredems'] !== null ? Autolinker.link(feature.properties['wheredems'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_CD_41copy_1_0(feature) {
+            if (feature.properties['REG18D'] >= 0.000000 && feature.properties['REG18D'] <= 119.000000 ) {
+                return {
+                pane: 'pane_CD_41copy_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.557)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(247,251,255,0.557)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['REG18D'] >= 119.000000 && feature.properties['REG18D'] <= 266.000000 ) {
+                return {
+                pane: 'pane_CD_41copy_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.557)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(200,221,240,0.557)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['REG18D'] >= 266.000000 && feature.properties['REG18D'] <= 411.000000 ) {
+                return {
+                pane: 'pane_CD_41copy_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.557)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(115,179,216,0.557)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['REG18D'] >= 411.000000 && feature.properties['REG18D'] <= 624.000000 ) {
+                return {
+                pane: 'pane_CD_41copy_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.557)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(40,121,185,0.557)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['REG18D'] >= 624.000000 && feature.properties['REG18D'] <= 1062.000000 ) {
+                return {
+                pane: 'pane_CD_41copy_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,0.557)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(8,48,107,0.557)',
+                interactive: true,
+            }
+            }
+        }
+        map.createPane('pane_CD_41copy_1');
+        map.getPane('pane_CD_41copy_1').style.zIndex = 401;
+        map.getPane('pane_CD_41copy_1').style['mix-blend-mode'] = 'normal';
+        var layer_CD_41copy_1 = new L.geoJson(json_CD_41copy_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_CD_41copy_1',
+            layerName: 'layer_CD_41copy_1',
+            pane: 'pane_CD_41copy_1',
+            onEachFeature: pop_CD_41copy_1,
+            style: style_CD_41copy_1_0,
+        });
+        bounds_group.addLayer(layer_CD_41copy_1);
+        map.addLayer(layer_CD_41copy_1);
+        setBounds();
+        </script>
+    </body>
+</html>
