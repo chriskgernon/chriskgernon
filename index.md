@@ -44,7 +44,7 @@ This link shows modeling I've done using QGIS. Here are some of my final product
 | ------------- | ------------- |
 
 
-# [Ayoub](./Ayoub/mapbox/network2.html)
+# [Ayoub](./Ayoub/frequency_map/country_freq.html)
 
 
 
