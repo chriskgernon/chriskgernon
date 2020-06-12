@@ -47,6 +47,8 @@ This link shows modeling I've done using QGIS. Here are some of my final product
 # [Ayoub]
 [Frequency Map](./Ayoub/frequency_map/country_freq.html)
 [network Map](./Ayoub/network_map/network_practice.html)
+[network Map 2](./Ayoub/network_map/network_practice2.html)
+
 
 
 
