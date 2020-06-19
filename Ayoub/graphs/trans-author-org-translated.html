@@ -1,0 +1,347 @@
+<canvas id="myChart"></canvas>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Show and hide layers</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="test_data.js"></script>
+<canvas id="bar-chart-authors" width="800" height="450"></canvas>
+<canvas id="bar-chart-translators" width="800" height="450"></canvas>
+<canvas id="chart"></canvas>
+<canvas id="bar-chart-org-pub" width="400" height="225"></canvas>
+<canvas id="bar-chart-trans-pub" width="800" height="450"></canvas>
+<canvas id="chart-publication"></canvas>
+<style>
+
+</style>
+</head>
+<body>
+<style>
+</style>
+
+<script>
+
+new Chart(document.getElementById("bar-chart-authors"), {
+    type: 'bar',
+    data: {
+      labels: ["Algeria", "Australia", "Belgium", "Canada", "Denmark", "Egypt", "Eritrea", "France", "Germany", "Iraq", "Israel", "Jordan", "Kuwait", "Lebanon", "Libya", "Morocco",
+    "Oman", "Palestine", "Qatar", "Russia", "Saudi Arabia", "Spain", "Sudan", "Switzerland", "Syria", "Tunisia", "UAE", "U.S", "Yemen", "Malaysia", "Scotland", "South Africa"],
+      datasets: [
+        {
+          label: "Number of Authors",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [2,1,2,8,1, 196, 1, 10, 3, 27, 2, 17, 2, 52, 4, 37, 1, 22, 7, 1, 18, 5, 9, 5, 27, 4, 6, 13, 18, 4, 0, 0, 0]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Number of Authors'
+      }
+    }
+});
+
+new Chart(document.getElementById("bar-chart-translators"), {
+    type: 'bar',
+    data: {
+      labels: ["Algeria", "Australia", "Belgium", "Canada", "Denmark", "Egypt", "Eritrea", "France", "Germany", "Iraq", "Israel", "Jordan", "Kuwait", "Lebanon", "Libya", "Morocco",
+    "Oman", "Palestine", "Qatar", "Russia", "Saudi Arabia", "Spain", "Sudan", "Switzerland", "Syria", "Tunisia", "UAE", "U.S", "Yemen", "Malaysia", "Scotland", "South Africa"],
+      datasets: [
+        {
+          label: "Number of Translators",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [0,
+1,
+0,
+28,
+0,
+66,
+0,
+0,
+0,
+1,
+4,
+4,
+1,
+10,
+1,
+1,
+0,
+3,
+0,
+0,
+6,
+0,
+2,
+1,
+1,
+1,
+3,
+117,
+235,
+0,
+1,
+1,
+8]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Number of Translators'
+      }
+    }
+});
+
+
+var ctx = document.getElementById('chart');
+
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Algeria", "Australia", "Belgium", "Canada", "Denmark", "Egypt", "Eritrea", "France", "Germany", "Iraq", "Israel", "Jordan", "Kuwait", "Lebanon", "Libya", "Morocco",
+    "Oman", "Palestine", "Qatar", "Russia", "Saudi Arabia", "Spain", "Sudan", "Switzerland", "Syria", "Tunisia", "UAE", "U.S", "Yemen", "Malaysia", "Scotland", "South Africa"],
+    datasets: [
+      {
+        label: 'Author',
+        data: [2,1,2,8,1, 196, 1, 10, 3, 27, 2, 17, 2, 52, 4, 37, 1, 22, 7, 1, 18, 5, 9, 5, 27, 4, 6, 13, 18, 4, 0, 0, 0],
+        backgroundColor: '#D6E9C6',
+      },
+      {
+        label: 'Translator',
+        data: [0, 1, 0, 28, 0, 66, 0, 0, 0, 1, 4, 4, 1, 10, 1, 1, 0, 3, 0, 0, 6, 0, 2, 1, 1, 1, 3, 117, 235, 0, 1, 1, 8],
+        backgroundColor: '#FAEBCC',
+      },
+    ]
+  },
+  options: {
+    scales: {
+      xAxes: [{ stacked: true }],
+      yAxes: [{ stacked: true }]
+    }
+  }
+});
+
+new Chart(document.getElementById("bar-chart-org-pub"), {
+    type: 'bar',
+    data: {
+      labels: ["Algeria", "Canada", "Egypt", "France", "Germany", "Hong Kong", "India",
+"Iraq",
+"Israel",
+"Italy",
+"Jordan",
+"Lebanon",
+"Maldives",
+"Morocco",
+"Palestine",
+"Qatar",
+"Saudi Arabia",
+"Syria",
+"The Netherlands",
+"Tunisia",
+"UAE",
+"UK",
+"USA",
+"Yemen"],
+      datasets: [
+        {
+          label: "Original Publication Countries",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [1,
+6,
+209,
+1,
+4,
+0,
+0,
+9,
+6,
+1,
+7,
+235,
+0,
+19,
+1,
+6,
+2,
+15,
+0,
+2,
+4,
+8,
+1,
+1]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Number of Original Publications'
+      }
+    }
+});
+
+new Chart(document.getElementById("bar-chart-trans-pub"), {
+    type: 'bar',
+    data: {
+      labels: ["Algeria", "Canada", "Egypt", "France", "Germany", "Hong Kong", "India",
+"Iraq",
+"Israel",
+"Italy",
+"Jordan",
+"Lebanon",
+"Maldives",
+"Morocco",
+"Palestine",
+"Qatar",
+"Saudi Arabia",
+"Syria",
+"The Netherlands",
+"Tunisia",
+"UAE",
+"UK",
+"USA",
+"Yemen"],
+      datasets: [
+        {
+          label: "Original Publication Countries",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [0,
+15,
+154,
+0,
+0,
+2,
+4,
+0,
+1,
+0,
+0,
+3,
+1,
+0,
+0,
+17,
+0,
+0,
+1,
+1,
+0,
+95,
+272,
+0]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Number of Translated Publications'
+      }
+    }
+});
+
+var ctx = document.getElementById('chart-publication');
+
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Algeria", "Canada", "Egypt", "France", "Germany", "Hong Kong", "India",
+"Iraq",
+"Israel",
+"Italy",
+"Jordan",
+"Lebanon",
+"Maldives",
+"Morocco",
+"Palestine",
+"Qatar",
+"Saudi Arabia",
+"Syria",
+"The Netherlands",
+"Tunisia",
+"UAE",
+"UK",
+"USA",
+"Yemen"],
+    datasets: [
+      {
+        label: 'Translated',
+        data: [0,
+15,
+154,
+0,
+0,
+2,
+4,
+0,
+1,
+0,
+0,
+3,
+1,
+0,
+0,
+17,
+0,
+0,
+1,
+1,
+0,
+95,
+272,
+0],
+        backgroundColor: '#D6E9C6',
+      },
+      {
+        label: 'Original',
+        data: [1,
+6,
+209,
+1,
+4,
+0,
+0,
+9,
+6,
+1,
+7,
+235,
+0,
+19,
+1,
+6,
+2,
+15,
+0,
+2,
+4,
+8,
+1,
+1],
+        backgroundColor: '#FAEBCC',
+      },
+    ]
+  },
+  options: {
+    scales: {
+      xAxes: [{ stacked: true }],
+      yAxes: [{ stacked: true }]
+    }
+  }
+});
+
+</script>
+ 
+</body>
+</html>
