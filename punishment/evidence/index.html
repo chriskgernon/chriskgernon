@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Punishment Project
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style type = "text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap');
+/* CSS Comment */
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+    body{background: #DBADAE; 
+        text-align: center;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    h1{
+        font-size: 70px; /*psuedoclass*/
+        color:#F0C351;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        word-spacing: 5px;
+        text-shadow:2.5px 2.5px black;
+        font-weight: bold;
+        padding: 40px;
+    }
+    h2{
+        font-size: 45px;
+        padding:40px;
+    }
+    
+    p{
+        font-size: 30px;
+        margin-right: 500px;
+        margin-left:500px;
+        text-align: left;
+        line-height: 40px;
+    }
+    
+    blockquote{
+        font-size: 30px;
+        margin-right: 650px;
+        margin-left: 650px;
+        margin-top: 75px;
+        margin-bottom: 75px;
+        line-height: 55px;
+    }
+    a {
+        text-decoration: none;
+        font-style: italic;
+        
+    }
+    a:hover{color: teal};
+    .more{
+        background-color:white;
+        font-size: 20px;
+        height: auto;
+        position: absolute;
+        width: 20%;
+        
+    }
+ul {
+  list-style-type: none;
+  margin-right: 500px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture1.png">
+    <img src="./images/picture1.png" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture2.png">
+    <img src="./images/picture2.png" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture3.png">
+    <img src="./images/picture3.png" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture4.png">
+    <img src="./images/picture4.png" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture5.png">
+    <img src="./images/picture5.png" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture6.png">
+    <img src="./images/picture6.png" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture7.png">
+    <img src="./images/picture7.png" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture8.png">
+    <img src="./images/picture8.png" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture9.png">
+    <img src="./images/picture9.png" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture10.png">
+    <img src="./images/picture10.png" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture11.png">
+    <img src="./images/picture11.png" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture12.png">
+    <img src="./images/picture12.png" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture13.png">
+    <img src="./images/picture13.png" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture14.png">
+    <img src="./images/picture14.png" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture15.png">
+    <img src="./images/picture15.png" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture16.png">
+    <img src="./images/picture16.png" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture17.png">
+    <img src="./images/picture17.png" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture18.png">
+    <img src="./images/picture18.png" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture19.png">
+    <img src="./images/picture19.png" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture20.png">
+    <img src="./images/picture20.png" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture21.png">
+    <img src="./images/picture21.png" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture22.png">
+    <img src="./images/picture22.png" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture23.png">
+    <img src="./images/picture23.png" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture24.png">
+    <img src="./images/picture24.png" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="./images/picture25.png">
+    <img src="./images/picture25.png" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture26.png">
+    <img src="./images/picture26.png" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture27.png">
+    <img src="./images/picture27.png" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture28.png">
+    <img src="./images/picture28.png" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture29.png">
+    <img src="./images/picture29.png" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture30.png">
+    <img src="./images/picture30.png" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture31.png">
+    <img src="./images/picture31.png" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture32.png">
+    <img src="./images/picture32.png" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/picture34.png">
+    <img src="./images/picture34.png" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc"></div>
+</div>
+
+
+</body>
+</html>
