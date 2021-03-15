@@ -1,0 +1,227 @@
+
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-half{float:left;width:100%;}
+.w3-halfright{float:right;width:100%}
+.w3-halfright{width:49.99999%}
+.w3-half{width:49.99999%}
+
+body{background: #000000; 
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+h1{
+    font-size: 45px; /*psuedoclass*/
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-shadow:2px 2px teal;
+    font-weight: bold;
+}
+
+h5{
+  font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(180, 180, 180);
+    style: bold;
+    
+}
+
+
+a:hover{color: teal};
+
+.jumbotron {
+    width: 100%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    max-width: 800px;
+    background-color:black!important;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  h1.jumbotron-heading {
+    margin-top: 25px;
+      margin-bottom: 25px;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+  }
+  
+  .jumbotron-heading a {
+    font-weight: bold;
+    color: black;
+    margin-top: 25px;
+  }
+  
+  .jumbotron-heading a:hover {
+    text-decoration: none;
+    color:black;
+  }
+  
+  .jumbotron p {
+    max-width: 100%;
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  
+  }
+
+.image{display: block;
+    width: 100%!important;
+    margin-bottom: 10px!important;
+  }
+.image {
+    display: block;
+    width: 40%;
+    margin-left: 5%;
+    height: auto;
+    margin-bottom: 20px;
+    float: left;
+    
+    
+}
+/* Parent Container */
+.content_img{
+    position: relative;
+   }
+   
+   /* Child Text Container */
+   .content_img div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color:rgba(0,0,0,0.7);
+    margin-bottom: 15px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0.5s, opacity 0.5s linear; 
+    transition: visibility 0.5s, opacity 0.5s linear;
+    width: 100%;
+    padding: 20px 15px;
+    text-align:right;
+    font-size:14px;
+   }
+   .container {
+    width: 90%;
+    max-width: 1000px;
+  }
+   /* Hover on Parent Container */
+   .content_img:hover{
+    cursor: pointer;
+   }
+   
+   .content_img:hover div{
+    visibility: visible;
+    opacity: 1; 
+   }
+
+
+   .dropdown {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+   .image_hp {
+    padding: 5px!important;
+    border: 1px solid lightgray!important;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 95%;
+    margin: auto;
+    max-width:1200px;
+  }
+
+
+
+  .example {
+    position: relative;
+    padding: 20px;
+    background-color: black;
+ 
+  }
+  hr {
+    border-top: 2px solid rgba(192, 192, 192, 0.472);
+  }
+
+.card {
+    border: 0;
+    margin-bottom:30px;
+    margin-top: 30px;
+  }
+  
+  
+.card-text {
+    font-weight: 300;
+    font-size: 14px;
+    color: gray;
+  }
+
+  .overlay2 {
+    position: relative;
+    float: right;
+
+    /*height: 100%;*/
+    width: 37%;
+  }
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 31%;
+    max-width: 31%;
+    padding: 0 10px 0 10px;
+  }
+  
+  .column img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  
+  }
+
+  #header{
+      text-shadow: none
+  }
+
+
