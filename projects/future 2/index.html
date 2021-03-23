@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Future</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+        body{
+        background-image: url('./insulin.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        }
+        .vl {
+            border-left: 5px solid black;
+             height: 1080px;
+             position: absolute;
+             right: 14%;
+             overflow:hidden;
+             top:0px;
+             margin: 0px;
+             padding: 0px;
+             
+         }
+       
+         div.caption {
+        width: 180px;
+        height: 333px;
+        border: 0px solid orange;
+        margin: 0px;
+        padding: 0px;
+        top: 0%;
+        right: 3%;
+        position:absolute;
+        } 
+        
+        div.caption2{
+        width: 180px;
+        height: 333px;
+        border: 0px solid orange;
+        position: absolute;
+          right: 3%;
+        top: 27%;
+        }
+        
+        div.caption3{
+        width: 180px;
+        height: 333px;
+        border: 0px solid orange;
+        position: absolute;
+          right: 3%;
+        top: 45%;
+        }
+
+         h1{
+        font-size: 15px; /*psuedoclass*/
+        color:#000000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        line-height:20px;
+        font-weight: bold;
+        margin: 20px;
+        text-align: left;
+         
+        }            
+
+        .needle{
+            right:-30%;
+            position: absolute;
+            top: -5%;
+            width: 90%;
+            height: 110%;
+            opacity: .15;
+        }
+        div.bg{
+            width: 210px;
+        height: 1040px;
+        border: 1px solid orange;
+        position: absolute;
+        right: 0px;
+        top: 0%;
+        background: #FFA200;
+
+        }
+        #myImg{
+        display:none;
+        width:82.5%;
+
+        }
+        #btn1{
+            position:absolute;
+            bottom: 2.5%;
+            right:2%;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 7px 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 8px;
+        }
+
+    
+
+        
+    </style>
+    
+     <script>
+$(document).ready(function(){
+  $('#btn1').on("click",function(e){
+   $('#myImg').toggle('slow');
+  });
+});
+    </script>
+   
+ </head>
+    <body>
+
+   
+        <div class = "bg"> 
+    <div class = "allcaptions">  
+    <div class= "caption">
+        <h1> Insulin prices have more than tripled in the last decade. In 2016, the average price per month was $450.</h1></div>
+        <div class = "caption2">
+            <h1>
+                As many as 1 in 4 are skimping on insulin for cost saving measures. 
+            </h1>
+            
+        </div>
+        <div class = "caption3">
+            <h1>
+              This is a project that imagines a future where insulin is so cheap it mine as well grow on trees.  
+                
+            </h1>
+            
+        </div>
+        </div>  
+    </div>
+
+    <img class = "needle" src= './needle2.png'>
+  <img src="apples.jpg" alt="Show/Hide Image" id="myImg"/>
+  <button type="button" id="btn1">Click to see the start image</button>
+   <div class = "vl"></div>
+
+        
+    </body>
+    
+    
+    
+</html>

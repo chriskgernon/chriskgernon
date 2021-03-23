@@ -1,0 +1,197 @@
+
+<html>
+    <head>
+        <title>Call to Action Poster</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+        background-image: url('./images/bg-100.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        }
+        .pos{
+            position: absolute;
+        }
+        .triangle{
+            width:500px;
+        }
+        .red {background-color:red;} /*the period denotes a class; defaults to rules of last named class example: class ="triangle red"*/
+        .distext{
+            width:30%;
+            height: auto;
+            margin-left: 50%;
+            margin-top: 14%;
+            font-size: 4em;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .distext a{
+            text-decoration: none;
+            
+        }
+        
+        .distext a:hover{ /*when mouse hovers over text, will change color*/
+            color: yellow;
+        }
+        .cell {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+
+        }
+        
+        .suit {
+            position: absolute;
+            bottom: -1%;
+            height: 40%;
+        }
+        .sticker{
+            position: absolute;
+            bottom: 2%;
+            left: 27%;
+        }
+        
+        .cant{
+            position: absolute;
+            bottom: -0.2%;
+            left: 28.1%;
+        }
+         .null{
+            position: absolute;
+            bottom: 4.5%;
+            left: 31.8%;
+        }
+        
+        .vote{
+            position: absolute;
+            bottom: 2%;
+            left: 24%;
+        }
+        
+        h1{
+        font-size: 45px; /*psuedoclass*/
+        color:#000000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        line-height:65px;
+        font-weight: bold;
+        margin: 10px;
+        margin-top: 25%;
+        text-align: center;
+        
+            
+        }
+        
+        h1:hover{
+           font-size: 45px; /*psuedoclass*/
+        color:#000000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        line-height:65px;
+        font-weight: bold;
+        margin: 10px;
+        text-shadow: 2px 2px orange;
+        margin-top: 25%;
+        text-align: center;
+        }
+        
+        div.caption {
+        width: 525px;
+        height: 690px;
+        border: 0px solid #000000;
+        float: right;
+        padding: 0px;
+        } 
+        a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 8px 16px;
+        }
+        
+            a:hover {
+      background-color: #A9A9A9;
+      color: black;
+        }
+       
+        div.hidden{
+            display:none;
+        }
+         .next {
+          background-color: orange;
+          color: black;
+        
+        }
+        a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 8px 16px;
+        }
+        
+            a:hover {
+      background-color: #A9A9A9;
+      color: black;
+        }
+        
+        .round {
+        border-radius: 50%;
+            }
+            
+        div.nextbtn{
+            position:absolute;
+            right: 5;
+            bottom: 5;
+        }
+        .previous {
+    background-color: grey;
+    color: black;
+        }
+        div.prvbtn{
+            position:absolute;
+            left: 5;
+            bottom: 5;
+        }
+        
+        /* Illustrator is 1980*/
+        </style>
+        <script>
+        $(document).ready(function () {
+        $('div.hidden').fadeIn(10000).removeClass('hidden');
+        });
+ 
+    </script>
+    </head>
+    
+    <body>
+    
+    <div class= "hidden">
+    <img class = "cell" src= './images/cell.png'/></div>
+    <img class = "suit" src = './images/suit.png'/>
+
+    <div class ="caption">
+    <h1>Prisoners are not allowed to vote, yet the census counts them as part of the district where they are imprisoned. </h1>
+    </div>
+    <div id="b">
+    <img class = "sticker" src = './images/sticker.png'/>
+    </div>
+       <div class = "nextbtn">
+    <a href="./index2.html" class="next round">&#8250;</a>
+    </div>
+    <div class = "prvbtn">
+    <a href="http://chriskgernon.middcreate.net/" class="previous round">&#8249;</a>
+    </div>
+  </body>
+    
+ 
+
+        
+    
+    
+    
+    
+</html>

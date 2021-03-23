@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <title>Call to Action Poster</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        }
+        
+        .folder{
+            top:-300;
+            left:0px;
+            position:absolute;
+            width:55%;
+            height: auto;
+            float:left;
+
+
+
+        }
+
+        h1{
+        font-size: 40px; /*psuedoclass*/
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        word-spacing: 6px;
+        line-height:80px;
+        font-weight: bold;
+        margin: 100px;
+        text-align: center;
+        
+            
+        }
+        
+        /*h1:hover{
+           font-size: 45px; /*psuedoclass
+        color:#000000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        line-height:65px;
+        font-weight: bold;
+        margin: 10px;
+        text-shadow: 2px 2px orange;
+        margin-top: 55px;
+        text-align: center;
+        }*/
+        div.caption {
+        width: 650px;
+        height: 800px;
+        border: 1px solid #000000;
+        float: right;
+        padding: 0px;
+        } 
+        
+         div.a {
+        text-decoration: none;
+        font-style: italic;
+        color: tan;
+        
+    }
+    div.a:hover{color: teal;}
+    
+        .next {
+          background-color: white;
+          color: black;
+        
+        }
+        a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 8px 16px;
+        }
+        
+            a:hover {
+      background-color: #A9A9A9;
+      color: black;
+        }
+        
+        .round {
+        border-radius: 50%;
+            }
+            
+        div.nextbtn{
+            position:absolute;
+            right: 5;
+            bottom: 5;
+        }
+        .previous {
+    background-color: black;
+    color: white;
+        }
+        div.prvbtn{
+            position:absolute;
+            left: 5;
+            bottom: 5;
+        }
+          .vl {
+            border-left: 5px solid black;
+             height: 870px;
+             position: absolute;
+             right: 44.8%;
+             overflow:hidden;
+             top:0px;
+             margin: 0px;
+             padding: 0px;
+             
+         }
+          #myImg{
+            position:absolute;
+            width:15%;
+            height: auto;
+            top:59.5%;
+            left: 20%;
+            display:none;
+
+        }
+        #btn1{
+            position:absolute;
+            bottom: 8%;
+            right:14%;
+            background-color: white; /* Green */
+            border: none;
+            color: black;
+            padding: 7px 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 12px;
+        }
+         #btn1:hover{
+            position:absolute;
+            bottom: 8%;
+            right:14%;
+            background-color: grey; /* Green */
+            border: none;
+            color: black;
+            padding: 7px 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+    
+
+        
+ </style>
+     <script>
+$(document).ready(function(){
+  $('#btn1').on("click",function(e){
+   $('#myImg').toggle('slow');
+  });
+});
+    </script>
+        
+         </head>
+    
+    <body>
+    
+    <img class = "folder" src = './images/panel3_anel.png'/>
+    <div class = "caption">
+    <h1>
+        So politicians are elected who do not represent the populations that give them their funds and power. 
+        
+    </h1>
+    </div>
+     <div class = "nextbtn">
+    <a href="https://chriskgernon.github.io/" class="next round">&#8250;</a>
+    </div>
+    <div class = "prvbtn">
+    <a href="./prison2.html" class="previous round">&#8249;</a>
+    
+
+    </div>
+      <div class = "vl"></div>
+      
+       
+  <button type="button" id="btn1">Click to see a surprise (and a culprit)</button>
+  <img src="./images/mitch.png" id="myImg"/>
+        
+
+  </body>
+    
+ 
+
+        
+    
+    
+    
+    
+</html>
